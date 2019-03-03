@@ -1,12 +1,6 @@
 
 var columnEchart = echarts.init(document.getElementById('barChart'));
 
-
-// 亮色图片
-var uploadedDataURL1 = "/asset/get/s/data-1514970761653-ByzqAf9XG.png";
-var uploadedDataURL2 = "/asset/get/s/data-1514970765660-B1I50M5QM.png";
-
-
 var grayBar = [1, 1, 1, 1, 1, 1,1,1,1,1];
 var zongjine = [2000, 3000, 4000, 5000, 6000, 7000,8000,9000,10000,20000];
 var xingm = ['仓库10', '仓库9', '仓库8', '仓库7', '仓库6', '仓库5','仓库4','仓库3','仓库2','仓库1'];

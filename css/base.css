@@ -19,10 +19,35 @@ button::-moz-focus-inner{padding:0;border:none;}
 .mt10{margin-top:10px;}
 .mb{margin-bottom:10px;}
 .none{display:none;}
+
 .commonBox{
     position: relative;
     /*margin: 20px 10px 0;*/
     background: rgba(9,30,92,0.6);
+}
+.midCenterBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.commonBox120{
+    position: absolute;
+    top: 10%;
+    width: 15.503876%;
+    height: 0;
+    padding-top: 5.426356589147287%;
+
+}
+.commonBox120 .innerBox{
+    /*display: flex;*/
+    color: #29B0FF;
+    /*justify-content: center;*/
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .commonBox228{
     width: 76.233184%;
@@ -55,4 +80,63 @@ button::-moz-focus-inner{padding:0;border:none;}
     linear-gradient(to left, #56AEFF, #56AEFF) right bottom no-repeat;
     background-size: 2px 10px, 10px 2px, 2px 10px, 10px 2px;
 
+}
+.legendLeft{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 17.829457364341086%;
+    height: 0;
+    padding-top: 46.511627906976744%;
+    z-index: 4;
+}
+.legendRight{
+    left: auto;
+    right: 0;
+}
+.legendLeft ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.legendLeft ul li{
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin-bottom: 20px;
+    padding-top: 43.478260869565216%;
+    background: url("../image/storeBg.png");
+    background-size: 100% 100%;
+}
+.legendLeft ul li .innerLi{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.innerLi .storeName{
+    color: #29B0FF;
+}
+.innerLi .storeName i{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.innerLi .storeName i:before{
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #29B0FF ;
+}
+.innerLi .storeNumber{
+    color: #fff;
+    font-size: 24px;
 }

@@ -25,8 +25,8 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    height: 0;
-    padding-top: 3.75%;
+    height: 8.866995%;
+    /*padding-top: 3.75%;*/
     background: url("../image/titBg.png");
     background-size: 100% 100%;
 
@@ -72,23 +72,36 @@ body{
 }
 .mContent{
     position: absolute;
-    top: 52px;
+    top: 12%;
     left: 0;
     display: flex;
     width: 100%;
+    height: 85%;
 }
 /*布局比例 s*/
+.lineBox{
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0 2.457002%;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .mLeft{
-    width: 26.3%;
-    padding-left: 15px;
+    width: 24.22619%;
+    height: 100%;
 }
 .mRight{
-    width: 26.3%;
-    padding-right: 15px;
+    width: 24.22619%;
+    height: 100%;
+
 }
 .mMid{
-    width: 47.4%;
-    padding:20px 40px 0 40px;
+    width: 51.547619%;
+    height: 100%;
+}
+.mMid .lineBox{
+    padding: 0 5.311778%;
 }
 /*布局比例 e*/
 
@@ -96,13 +109,13 @@ body{
     display: flex;
 }
 .mLeft .line-fir,.mRight .line-fir{
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     justify-content: space-between;
 }
 .mRight .line-sec,.mRight .line-third,
 .mLeft .line-sec,.mLeft .line-third{
     display: block;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 .line .tit{
     font-size: 12px;
@@ -177,8 +190,18 @@ body{
 /*中间部分*/
 
 .mMid .midTop{
-    display: flex;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 9.819121%;
     color: #56AEFF;
+}
+.mMid .midTop .innerTop{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 .mMid .midTop .tLeft,
 .mMid .midTop .tRight{
@@ -189,26 +212,130 @@ body{
 }
 .mMid .midTop .tLeft .tit,
 .mMid .midTop .tRight .tit{
-    margin-bottom: 6px;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 20px;
+    text-align: left;
 }
-.mMid .midTop .tLeft dl,
-.mMid .midTop .tRight dl{
-    height: 60px;
-}
+
 .mMid .midTop .tRight dl{
     float: right;
 }
-.mMid .midTop .tLeft dl dd,
-.mMid .midTop .tRight dl dd{
+.mMid .midTop .tLeft dd,
+.mMid .midTop .tRight dd{
     float: left;
-    width: 28px;
-    height: 40px;
+    width: 9.302326%;
+
     margin-right: 6px;
     background-color: #272951;
     border: 1px #343652 solid;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
 }
-.mMid .midTop{}
+.mMid .midCenter{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+}
+.mMid .midCenter dl{
+    width: 50%;
+}
+.mMid .midCenter dl dt{
+    color: #00B6FF;
+}
+.mMid .midCenter dl dd{
+    color:#fff;
+}
+.mMid .midCenter dl dd .green{
+    color: #24FFB6;
+}
+.midContainer{
+    position: relative;
+    height: 0;
+    padding-top: 68.475452%;
+
+}
+.mMid .midBox .chinaMap{
+
+}
+.mMid .midBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:translate(-50%, -45%);
+    -moz-transform:translate(-50%, -45%);
+    transform:translate( -50%, -45%);
+    width: 77.51938%;
+    padding-top: 64.03100%;
+    margin: 0 auto;
+    background: url("../image/china.png");
+    background-size: 100% auto;
+    z-index: 2;
+}
+.mapOut{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:translate(-50%, -45%);
+    -moz-transform:translate(-50%, -45%);
+    transform:translate( -50%, -45%);
+    width: 73.643411%;
+    height: 0;
+    padding-top:  73.643411%;
+
+    /*transform-origin:-50% -50%;*/
+
+}
+.mapOut .inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/map-out.png") center no-repeat;
+    background-size: 80% auto;
+    opacity: .7;
+    animation:circling 5s linear 0s infinite;
+    z-index: 1;
+}
+@keyframes circling{
+     from{
+         transform:rotate(0deg);
+     }
+     to{
+         transform:rotate(360deg);
+     }
+ }
+@keyframes circling2{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-360deg);
+    }
+}
+
+.mapIn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:translate(-50%, -45%);
+    -moz-transform:translate(-50%, -45%);
+    transform:translate( -50%, -45%);
+    width: 54.263566%;
+    height: 0;
+    padding-top:  54.263566%;
+}
+.mapIn .inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/map-in.png")  center no-repeat;
+    background-size: 80% auto;
+    opacity: .7;
+    animation:circling2 5s linear 0s infinite;
+    z-index: 1;
+}
