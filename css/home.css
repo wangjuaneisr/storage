@@ -1,14 +1,24 @@
 html,body{
-    width: 100%;
-}
-
-.monitorBg{
     position: relative;
-    width: 100%;
+    width:100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    font-family:'Roboto',Helvetica Neue,Helvetica,Arial,PingFang SC,San Francisco,Noto Sans CJK,Heiti,华文细黑,hiragino sans gb,microsoft yahei ui,Microsoft YaHei,SimSun, sans serif
+}
+body{
+    position: relative;
+}
+.monitorBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    /*width: 1280px;*/
     height: 0;
-    padding-top: 42.339833%;
-    /*background: url("../image/grid.png") repeat;*/
-    background-image: linear-gradient(0deg, #041C3E 0%, #16195B 100%);
+    padding-top: 42.291667%;
+    background: url("../image/grid.jpg") no-repeat;
+    background-size: 100% 100%;
+    /*background-image: linear-gradient(0deg, #041C3E 0%, #16195B 100%);*/
 }
 .mHead{
     position: absolute;
@@ -16,9 +26,189 @@ html,body{
     top: 0;
     width: 100%;
     height: 0;
-    padding-top:3.664193%;
+    padding-top: 3.75%;
     background: url("../image/titBg.png");
     background-size: 100% 100%;
-    font-size: 52px;
-    color: #FFFFFF;
+
 }
+.innerHead{
+
+}
+.mHead .tit{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    line-height: 52px;
+}
+.mHead .logo{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    width: 193px;
+    height: 27px;
+    background: url("../image/logo.png");
+    background-size: 100% 100%;
+}
+.mHead .time{
+    position: absolute;
+    right: 52px;
+    top: 7px;
+    color: #00B6FF;
+    font-size: 12px;
+}
+.mHead .esc-btn{
+    position: absolute;
+    right: 18px;
+    top: 7px;
+    width: 18px;
+    height: 18px;
+    background: url("../image/close.png");
+    background-size: 100% 100%;
+}
+.mContent{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    display: flex;
+    width: 100%;
+}
+/*布局比例 s*/
+.mLeft{
+    width: 26.3%;
+    padding-left: 15px;
+}
+.mRight{
+    width: 26.3%;
+    padding-right: 15px;
+}
+.mMid{
+    width: 47.4%;
+    padding:20px 40px 0 40px;
+}
+/*布局比例 e*/
+
+.mLeft .line,.mRight .line{
+    display: flex;
+}
+.mLeft .line-fir,.mRight .line-fir{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.mRight .line-sec,.mRight .line-third,
+.mLeft .line-sec,.mLeft .line-third{
+    display: block;
+    margin-top: 20px;
+}
+.line .tit{
+    font-size: 12px;
+    color: #29B0FF;
+    line-height: 30px;
+}
+.mRight .innerBox,
+.mLeft .innerBox{
+    display: flex;
+    justify-content: center;
+}
+.mRight .line-sec .innerBox,
+.mLeft .line-sec .innerBox{
+    /*padding: 0 15px;*/
+    justify-content: space-around;
+}
+
+.line-fir .innerBox{
+    align-items: center;
+}
+.mRight .innerBox .check{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url("../image/monitor.png");
+    background-size: 100% 100%;
+    align-items: center;
+}
+.mRight .commonBox228{
+    width: 100%;
+}
+.mLeft .innerBox .file{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url("../image/brief.png");
+    background-size: 100% 100%;
+    align-items: center;
+}
+.mRight .innerBox .blueGo,
+.mLeft .innerBox .blueGo{
+    width: 8px;
+    height: 12px;
+    margin-left: 5px;
+    background: url("../image/go.png");
+    background-size: 100% 100%;
+    align-items: center;
+}
+.mRight .innerBox .txt,
+.mLeft .innerBox .txt{
+    font-size: 18px;
+    color: #56AEFF;
+}
+.mLeft .innerBox .code{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: rgba(0,69,153,0.5);
+}
+.mLeft .code .innerCode{
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    background: url("../image/code.png");
+    background-size: 100% 100%;
+}
+
+
+
+
+
+/*中间部分*/
+
+.mMid .midTop{
+    display: flex;
+    color: #56AEFF;
+}
+.mMid .midTop .tLeft,
+.mMid .midTop .tRight{
+    width: 50%;
+}
+.mMid .midTop .tRight{
+
+}
+.mMid .midTop .tLeft .tit,
+.mMid .midTop .tRight .tit{
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.mMid .midTop .tLeft dl,
+.mMid .midTop .tRight dl{
+    height: 60px;
+}
+.mMid .midTop .tRight dl{
+    float: right;
+}
+.mMid .midTop .tLeft dl dd,
+.mMid .midTop .tRight dl dd{
+    float: left;
+    width: 28px;
+    height: 40px;
+    margin-right: 6px;
+    background-color: #272951;
+    border: 1px #343652 solid;
+    font-size: 36px;
+    text-align: center;
+}
+.mMid .midTop{}
