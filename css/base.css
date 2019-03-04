@@ -34,7 +34,7 @@ button::-moz-focus-inner{padding:0;border:none;}
 }
 .commonBox120{
     position: absolute;
-    top: 10%;
+    top: 15%;
     width: 15.503876%;
     height: 0;
     padding-top: 5.426356589147287%;
@@ -83,7 +83,7 @@ button::-moz-focus-inner{padding:0;border:none;}
 }
 .legendLeft{
     position: absolute;
-    bottom: 10%;
+    bottom: 3%;
     left: 0;
     width: 17.829457364341086%;
     height: 0;
@@ -105,16 +105,25 @@ button::-moz-focus-inner{padding:0;border:none;}
     position: relative;
     width: 100%;
     height: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-top: 43.478260869565216%;
     background: url("../image/storeBg.png");
     background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
 }
+.legendLeft ul li .pieChart{
+
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+
 .legendLeft ul li .innerLi{
     position: absolute;
     left: 0;
     top: 0;
-    /*width: 100%;*/
+    /*width: 90%;*/
     /*height: 100%;*/
     padding-top: 10%;
     padding-left: 10%;

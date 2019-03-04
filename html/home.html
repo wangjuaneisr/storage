@@ -46,7 +46,7 @@
                     <div class="line line-sec">
                         <div class="tit">
                             <span>订单分布图</span>
-                            <span>top7</span>
+                            <span class="top">top7 <i></i></span>
                         </div>
                         <div class="commonBox commonBox300">
                             <div class="innerBox">
@@ -100,11 +100,17 @@
                            <div class="midCenter">
                                <dl>
                                    <dt>昨日</dt>
-                                   <dd><span>832998</span><span class="green">10.41</span></dd>
+                                   <dd class="index">
+                                       <span class="num">832998</span>
+                                       <span class="number green"><i class="greenUp"></i><span class="icon">10.41%</span></span>
+                                   </dd>
                                </dl>
                                <dl>
                                    <dt>昨日</dt>
-                                   <dd><span>832998</span><span class="green">10.41</span></dd>
+                                   <dd  class="index">
+                                       <span class="num">832998</span>
+                                       <span class="number red"><i class="redDown"></i><span class="icon">10.41%</span></span>
+                                   </dd>
                                </dl>
                            </div>
 
@@ -121,30 +127,35 @@
                                             <div class="storeName"><i></i>仓库1</div>
                                             <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart6" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart7" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart8" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart9" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart10" style="width: 50px;height: 50px;"></div>
                                    </li>
                                </ul>
                            </div>
@@ -156,30 +167,36 @@
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart1" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart2" style="width: 50px;height: 50px;"></div>
+
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart3" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart4" style="width: 50px;height: 50px;"></div>
                                    </li>
                                    <li>
                                        <div class="innerLi">
                                            <div class="storeName"><i></i>仓库1</div>
                                            <div class="storeNumber">986</div>
                                        </div>
+                                       <div class="pieChart" id="pieChart5" style="width: 50px;height: 50px;"></div>
                                    </li>
                                </ul>
                            </div>
@@ -215,11 +232,10 @@
                             </a>
                         </div>
                     </div>
-
                     <div class="line line-third">
                         <div class="tit">
-                            <span>订单分布图</span>
-                            <span>top7</span>
+                            <span>今日在库品种数</span>
+                            <span class="top">TOP10 <i></i></span>
                         </div>
                         <div class="commonBox commonBox300">
                             <div class="innerBox">
@@ -229,11 +245,84 @@
                     </div>
                     <div class="line line-third">
                         <div class="tit">
-                            <span>近30天出库分布</span>
+                            <span>近效期的品种数</span>
+                            <span class="top">TOP10 <i></i></span>
                         </div>
                         <div class="commonBox commonBox300">
                             <div class="innerBox">
-                                <div class="column" id="columnChart" style="width: 100%;min-height: 150px;"></div>
+                                <ul class="indexBox">
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">10.41%</span></span>
+                                        </div>
+                                    </li>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
@@ -247,109 +336,8 @@
 <script src="../lib/jquery-3.3.1.min.js"></script>
 <script src="../lib/echarts.min.js"></script>
 <script src="../js/home.js"></script>
-<script>
-
-    // var circleChart = echarts.init(document.getElementById('circleEchart'));
-    //
-    // var data = genData(50);
-    //
-    // option = {
-    //     tooltip : {
-    //         trigger: 'item',
-    //         // formatter: "{a} <br/>{b} : {c} ({d}%)"
-    //     },
-    //     legend: {
-    //         show:false,
-    //         orient: 'horizontal',
-    //         // right: 10,
-    //         // top: 20,
-    //         // bottom: 20,
-    //         width:'70%',
-    //         x: 'center', // 'center' | 'left' | {number},
-    //         y: 'bottom', // 'center' | 'bottom' | {number}
-    //         data: data.legendData,
-    //         selected: data.selected,
-    //         icon: "circle",   //  这个字段控制形状  类型包括 circle，rect ，roundRect，triangle，diamond，pin，arrow，none
-    //         itemWidth: 10,  // 设置宽度
-    //         itemHeight: 10, // 设置高度
-    //         itemGap: 10, // 设置间距
-    //         textStyle:{//图例文字的样式
-    //             color:'#fff',
-    //             fontSize:12
-    //         }
-    //     },
-    //     series : [
-    //         {
-    //             name: '姓名',
-    //             type: 'pie',
-    //             radius: ['50%', '55%'],
-    //             center: ['50%', '50%'],
-    //             data: data.seriesData,
-    //             // itemStyle: {
-    //             //     emphasis: {
-    //             //         shadowBlur: 5,
-    //             //         shadowOffsetX: 0,
-    //             //         shadowColor: 'rgba(0, 0, 0, 0.5)'
-    //             //     }
-    //             // },
-    //             // label: {
-    //             //     show:false,
-    //             //     align: 'left',
-    //             //     normal: {
-    //             //         normal: {
-    //             //             textStyle: {
-    //             //                 fontSize: 6
-    //             //             }
-    //             //         }
-    //             //     }
-    //             // }
-    //         }
-    //     ]
-    // };
-    //
-    //
-    // function genData(count) {
-    //     var nameList = [
-    //         '赵', '钱', '孙', '李', '周', '吴', '郑', '王', '冯'
-    //     ];
-    //     var legendData = [];
-    //     var seriesData = [];
-    //     var selected = {};
-    //     for (var i = 0; i < 9; i++) {
-    //         var name = Math.random() > 0.65
-    //             ? makeWord(4, 1) + '·' + makeWord(3, 0)
-    //             : makeWord(2, 1);
-    //         legendData.push(name);
-    //         seriesData.push({
-    //             name: name,
-    //             value: Math.round(Math.random() * 100000)
-    //         });
-    //         selected[name] = i < 6;
-    //     }
-    //
-    //     return {
-    //         legendData: legendData,
-    //         seriesData: seriesData,
-    //         selected: selected
-    //     };
-    //
-    //     function makeWord(max, min) {
-    //         var nameLen = Math.ceil(Math.random() * max + min);
-    //         var name = [];
-    //         for (var i = 0; i < nameLen; i++) {
-    //             name.push(nameList[Math.round(Math.random() * nameList.length - 1)]);
-    //         }
-    //         return name.join('');
-    //     }
-    // }
-    //
-    //
-    // circleChart.setOption(option);
-
-
-
-</script>
 <script src="../js/pie.js"></script>
+<script src="../js/pie2.js"></script>
 <script src="../js/bar.js"></script>
 <script src="../js/bar2.js"></script>
 </html>

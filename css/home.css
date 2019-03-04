@@ -19,6 +19,7 @@ body{
     background: url("../image/grid.jpg") no-repeat;
     background-size: 100% 100%;
     /*background-image: linear-gradient(0deg, #041C3E 0%, #16195B 100%);*/
+    overflow: hidden;
 }
 .mHead{
     position: absolute;
@@ -41,9 +42,10 @@ body{
     width: 100%;
     height: 100%;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.9rem;
+    /*font-size: 24px;*/
     text-align: center;
-    line-height: 52px;
+    line-height: 3.8rem;
 }
 .mHead .logo{
     position: absolute;
@@ -121,6 +123,17 @@ body{
     font-size: 12px;
     color: #29B0FF;
     line-height: 30px;
+}
+.line .tit .top{
+    float: right;
+}
+.line .tit .top i{
+    float: right;
+    width: 10px;
+    height: 30px;
+    margin-left: 5px;
+    background: url("../image/up.png") center no-repeat;
+    background-size: 80% 40%;
 }
 .mRight .innerBox,
 .mLeft .innerBox{
@@ -213,7 +226,7 @@ body{
 .mMid .midTop .tLeft .tit,
 .mMid .midTop .tRight .tit{
     font-size: 12px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: left;
 }
 
@@ -237,6 +250,7 @@ body{
     top: 10px;
     left: 0;
     width: 100%;
+    z-index: 4;
 }
 .mMid .midCenter dl{
     width: 50%;
@@ -245,15 +259,59 @@ body{
     color: #00B6FF;
 }
 .mMid .midCenter dl dd{
+    height: 30px;
     color:#fff;
+    line-height: 30px;
 }
-.mMid .midCenter dl dd .green{
+.index .green{
     color: #24FFB6;
+}
+.index .red{
+    color: #FF3737;
+}
+.index .number{
+    height: 24px;
+    padding: 0 10px;
+    /*margin-top: 5px;*/
+    border-radius: 20px;
+    line-height: 24px;
+}
+.index .num{
+    font-size: 24px;
+}
+.index .green{
+    margin-left: 10px;
+    background-color: rgba(0,179,119,0.2);
+}
+.index .red{
+    margin-left: 10px;
+    background-color: rgba(255,55,55,0.2);
+}
+.index i,
+.index span{
+    float: left;
+}
+.index span.icon{
+    margin-left: 4px;
+}
+.index .greenUp{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/green-up.png") center no-repeat;
+    background-size: 100% auto;
+}
+.index .redDown{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/red-down.png") center no-repeat;
+    background-size: 100% auto;
 }
 .midContainer{
     position: relative;
     height: 0;
-    padding-top: 68.475452%;
+    padding-top: 69.475452%;
 
 }
 .mMid .midBox .chinaMap{
@@ -266,10 +324,10 @@ body{
     -webkit-transform:translate(-50%, -45%);
     -moz-transform:translate(-50%, -45%);
     transform:translate( -50%, -45%);
-    width: 77.51938%;
+    width: 73.51938%;
     padding-top: 64.03100%;
     margin: 0 auto;
-    background: url("../image/china.png");
+    background: url("../image/china.png") center no-repeat;
     background-size: 100% auto;
     z-index: 2;
 }
@@ -294,10 +352,10 @@ body{
     width: 100%;
     height: 100%;
     background: url("../image/map-out.png") center no-repeat;
-    background-size: 80% auto;
-    opacity: .7;
+    background-size: 96% auto;
     animation:circling 5s linear 0s infinite;
     z-index: 1;
+    opacity: 0.3;
 }
 @keyframes circling{
      from{
@@ -334,8 +392,52 @@ body{
     width: 100%;
     height: 100%;
     background: url("../image/map-in.png")  center no-repeat;
-    background-size: 80% auto;
-    opacity: .7;
+    background-size: 93% auto;
     animation:circling2 5s linear 0s infinite;
     z-index: 1;
+    opacity: 0.3;
+}
+
+
+
+.indexBox{
+    width: 100%;
+}
+.indexBox li{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+   align-items: center;
+    justify-content: center;
+}
+.indexBox li .name{
+    font-size: 14px;
+    color: #00B6FF;
+}
+.indexBox li .data{
+    font-size: 24px;
+    color: #fff;
+}
+.indexBox .index .red{
+    margin: 0;
+}
+.indexBox .index  .number{
+    padding: 0 5px;
+}
+.index .redUp{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/red-up.png") center no-repeat;
+    background-size: 100% auto;
+}
+.index .greenDown{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/green-down.png") center no-repeat;
+    background-size: 100% auto;
 }
