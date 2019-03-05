@@ -340,20 +340,13 @@
         var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
             _height = $(document).height() > $('html').height() ? $(document).height() : $('html').height(),
             _wScale= _width/1680,
-            _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
+            // _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
             _scale = _wScale;//以宽度为基准缩放
         $('.monitorBg').css({
             "-webkit-transform":"scale("+_scale+")",
             "-moz-transform":"scale("+_scale+")",
-            "transform":"scale("+_scale+")",
-            "top":_mheight
+            "transform":"scale("+_scale+")"
         });
-        // document.onkeydown=function(event){
-        //     var e = event || window.event || arguments.callee.caller.arguments[0];
-        //     if(e && e.keyCode==122){ // 按 Esc
-        //
-        //     }
-        // }
     }
     resizeBody();
     $(window).resize(function() {
