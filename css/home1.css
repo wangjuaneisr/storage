@@ -1,0 +1,445 @@
+html,body{
+    position: relative;
+    width:100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    font-family:'Roboto',Helvetica Neue,Helvetica,Arial,PingFang SC,San Francisco,Noto Sans CJK,Heiti,华文细黑,hiragino sans gb,SimSun, sans serif
+}
+body{
+    position: relative;
+}
+.monitorBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width:100%;*/
+    width: 1680px;
+    height: 708px;
+    /*padding-top: 42.291667%;*/
+    transform-origin: left top 0;
+    transform: scale(1);
+    background: url("../image/grid.jpg") no-repeat;
+    background-size: 100% 100%;
+    /*background-image: linear-gradient(0deg, #041C3E 0%, #16195B 100%);*/
+    overflow: hidden;
+}
+.mHead{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8.866995%;
+    /*padding-top: 3.75%;*/
+    background: url("../image/titBg.png");
+    background-size: 100% 100%;
+
+}
+.innerHead{
+
+}
+.mHead .tit{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    font-size: 1.9rem;
+    /*font-size: 24px;*/
+    text-align: center;
+    line-height: 3.8rem;
+}
+.mHead .logo{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    width: 193px;
+    height: 27px;
+    background: url("../image/logo.png");
+    background-size: 100% 100%;
+}
+.mHead .time{
+    position: absolute;
+    right: 52px;
+    top: 7px;
+    color: #00B6FF;
+    font-size: 12px;
+}
+.mHead .esc-btn{
+    position: absolute;
+    right: 18px;
+    top: 7px;
+    width: 18px;
+    height: 18px;
+    background: url("../image/close.png");
+    background-size: 100% 100%;
+}
+.mContent{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 85%;
+}
+/*布局比例 s*/
+.lineBox{
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0 2.457002%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mLeft{
+    width: 24.22619%;
+    height: 100%;
+}
+.mRight{
+    width: 24.22619%;
+    height: 100%;
+
+}
+.mMid{
+    width: 51.547619%;
+    height: 100%;
+}
+.mMid .lineBox{
+    padding: 0 5.311778%;
+}
+/*布局比例 e*/
+
+.mLeft .line,.mRight .line{
+    display: flex;
+}
+.mLeft .line-fir,.mRight .line-fir{
+    /*margin-top: 20px;*/
+    justify-content: space-between;
+}
+.mRight .line-sec,.mRight .line-third,
+.mLeft .line-sec,.mLeft .line-third{
+    display: block;
+    /*margin-top: 20px;*/
+}
+.line .tit{
+    font-size: 12px;
+    color: #29B0FF;
+    line-height: 30px;
+}
+.line .tit .top{
+    float: right;
+}
+.line .tit .top i{
+    float: right;
+    width: 10px;
+    height: 30px;
+    margin-left: 5px;
+    background: url("../image/up.png") center no-repeat;
+    background-size: 80% 40%;
+}
+.mRight .innerBox,
+.mLeft .innerBox{
+    display: flex;
+    justify-content: center;
+}
+.mRight .line-sec .innerBox,
+.mLeft .line-sec .innerBox{
+    /*padding: 0 15px;*/
+    justify-content: space-around;
+}
+
+.line-fir .innerBox{
+    align-items: center;
+}
+.mRight .innerBox .check{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url("../image/monitor.png");
+    background-size: 100% 100%;
+    align-items: center;
+}
+.mRight .commonBox228{
+    width: 100%;
+}
+.mLeft .innerBox .file{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url("../image/brief.png");
+    background-size: 100% 100%;
+    align-items: center;
+}
+.mRight .innerBox .blueGo,
+.mLeft .innerBox .blueGo{
+    width: 8px;
+    height: 12px;
+    margin-left: 5px;
+    background: url("../image/go.png");
+    background-size: 100% 100%;
+    align-items: center;
+}
+.mRight .innerBox .txt,
+.mLeft .innerBox .txt{
+    font-size: 18px;
+    color: #56AEFF;
+}
+.mLeft .innerBox .code{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: rgba(0,69,153,0.5);
+}
+.mLeft .code .innerCode{
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    background: url("../image/code.png");
+    background-size: 100% 100%;
+}
+
+
+
+
+
+/*中间部分*/
+
+.mMid .midTop{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 9.819121%;
+    color: #56AEFF;
+}
+.mMid .midTop .innerTop{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.mMid .midTop .tLeft,
+.mMid .midTop .tRight{
+    width: 50%;
+}
+.mMid .midTop .tRight{
+
+}
+.mMid .midTop .tLeft .tit,
+.mMid .midTop .tRight .tit{
+    font-size: 12px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.mMid .midTop .tRight dl{
+    float: right;
+}
+.mMid .midTop .tLeft dd,
+.mMid .midTop .tRight dd{
+    float: left;
+    width: 9.302326%;
+
+    margin-right: 6px;
+    background-color: #272951;
+    border: 1px #343652 solid;
+    font-size: 32px;
+    text-align: center;
+}
+.mMid .midCenter{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+}
+.mMid .midCenter dl{
+    width: 50%;
+}
+.mMid .midCenter dl dt{
+    color: #00B6FF;
+}
+.mMid .midCenter dl dd{
+    height: 30px;
+    color:#fff;
+    line-height: 30px;
+}
+.index .green{
+    color: #24FFB6;
+}
+.index .red{
+    color: #FF3737;
+}
+.index .number{
+    height: 24px;
+    padding: 0 10px;
+    /*margin-top: 5px;*/
+    border-radius: 20px;
+    line-height: 24px;
+}
+.index .num{
+    font-size: 24px;
+}
+.index .green{
+    margin-left: 10px;
+    background-color: rgba(0,179,119,0.2);
+}
+.index .red{
+    margin-left: 10px;
+    background-color: rgba(255,55,55,0.2);
+}
+.index i,
+.index span{
+    float: left;
+}
+.index span.icon{
+    margin-left: 4px;
+}
+.index .greenUp{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/green-up.png") center no-repeat;
+    background-size: 100% auto;
+}
+.index .redDown{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/red-down.png") center no-repeat;
+    background-size: 100% auto;
+}
+.midContainer{
+    position: relative;
+    height: 0;
+    padding-top: 69.475452%;
+
+}
+.mMid .midBox .chinaMap{
+
+}
+.mMid .midBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:translate(-50%, -45%);
+    -moz-transform:translate(-50%, -45%);
+    transform:translate( -50%, -45%);
+    width: 73.51938%;
+    padding-top: 64.03100%;
+    margin: 0 auto;
+    background: url("../image/china.png") center no-repeat;
+    background-size: 100% auto;
+    z-index: 2;
+}
+.mapOut{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:translate(-50%, -45%);
+    -moz-transform:translate(-50%, -45%);
+    transform:translate( -50%, -45%);
+    width: 73.643411%;
+    height: 0;
+    padding-top:  73.643411%;
+
+    /*transform-origin:-50% -50%;*/
+
+}
+.mapOut .inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/map-out.png") center no-repeat;
+    background-size: 96% auto;
+    animation:circling 5s linear 0s infinite;
+    z-index: 1;
+    opacity: 0.3;
+}
+@keyframes circling{
+     from{
+         transform:rotate(0deg);
+     }
+     to{
+         transform:rotate(360deg);
+     }
+ }
+@keyframes circling2{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-360deg);
+    }
+}
+
+.mapIn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:translate(-50%, -45%);
+    -moz-transform:translate(-50%, -45%);
+    transform:translate( -50%, -45%);
+    width: 54.263566%;
+    height: 0;
+    padding-top:  54.263566%;
+}
+.mapIn .inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/map-in.png")  center no-repeat;
+    background-size: 93% auto;
+    animation:circling2 5s linear 0s infinite;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+
+
+.indexBox{
+    width: 100%;
+}
+.indexBox li{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+   align-items: center;
+    justify-content: center;
+}
+.indexBox li .name{
+    font-size: 14px;
+    color: #00B6FF;
+}
+.indexBox li .data{
+    font-size: 24px;
+    color: #fff;
+}
+.indexBox .index .red{
+    margin: 0;
+}
+.indexBox .index  .number{
+    padding: 0 5px;
+}
+.index .redUp{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/red-up.png") center no-repeat;
+    background-size: 100% auto;
+}
+.index .greenDown{
+    float: left;
+    width: 10px;
+    height: 24px;
+    background: url("../image/green-down.png") center no-repeat;
+    background-size: 100% auto;
+}

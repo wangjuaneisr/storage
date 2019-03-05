@@ -1,0 +1,151 @@
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4{margin:0;padding:0;list-style:none;}
+body,button,input,select,textarea{font:12px Arial, Helvetica, sans-serif;color:#333;}
+input,select,textarea{font-size:100%;}
+a{text-decoration:none;color:#333;}
+a:hover{text-decoration:none;}
+a.blue_link{color:#06c;}
+a.blue_link:hover{color:#f60;}
+.clearfix:after{display:block;content:".";height:0;visibility:hidden;clear:both;font-size:0;line-height:0;}
+.clearfix{*zoom:1;}
+img{border:0 none;vertical-align:top;}
+em{font-style:normal;}
+button::-moz-focus-inner{padding:0;border:none;}
+.wrap{width:980px;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.mt{margin-top:10px;}
+.ml{margin-left:10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mb{margin-bottom:10px;}
+.none{display:none;}
+
+.commonBox{
+    position: relative;
+    /*margin: 20px 10px 0;*/
+    background: rgba(9,30,92,0.6);
+}
+.midCenterBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.commonBox120{
+    position: absolute;
+    top: 15%;
+    width: 15.503876%;
+    height: 0;
+    padding-top: 5.426356589147287%;
+
+}
+.commonBox120 .innerBox{
+    /*display: flex;*/
+    color: #29B0FF;
+    /*justify-content: center;*/
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.commonBox228{
+    width: 76.233184%;
+    height: 0;
+    padding-top: 19.955157%;
+}
+.commonBox60{
+    width: 19.955157%;
+    height: 0;
+    padding-top: 19.955157%;
+}
+.commonBox300{
+    width: 100%;
+    height:0;
+    padding-top: 50.672646%;
+}
+.innerBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #56AEFF, #56AEFF) left top no-repeat,
+    linear-gradient(to bottom, #56AEFF, #56AEFF) left top no-repeat,
+    linear-gradient(to left, #56AEFF, #56AEFF) right top no-repeat,
+    linear-gradient(to bottom, #56AEFF, #56AEFF) right top no-repeat,
+    linear-gradient(to left, #56AEFF, #56AEFF) left bottom no-repeat,
+    linear-gradient(to bottom, #56AEFF, #56AEFF) left bottom no-repeat,
+    linear-gradient(to left, #56AEFF, #56AEFF) right bottom no-repeat,
+    linear-gradient(to left, #56AEFF, #56AEFF) right bottom no-repeat;
+    background-size: 2px 10px, 10px 2px, 2px 10px, 10px 2px;
+
+}
+.legendLeft{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 17.829457364341086%;
+    height: 0;
+    padding-top: 46.511627906976744%;
+    z-index: 4;
+}
+.legendRight{
+    left: auto;
+    right: 0;
+}
+.legendLeft ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.legendLeft ul li{
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin-bottom: 15px;
+    padding-top: 43.478260869565216%;
+    background: url("../image/storeBg.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.legendLeft ul li .pieChart{
+
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+
+.legendLeft ul li .innerLi{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 90%;*/
+    /*height: 100%;*/
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.innerLi .storeName{
+    color: #29B0FF;
+}
+.innerLi .storeName i{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.innerLi .storeName i:before{
+    position: absolute;
+    left: 0;
+    top: -5px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #29B0FF ;
+}
+.innerLi .storeNumber{
+    color: #fff;
+    font-size: 24px;
+}
