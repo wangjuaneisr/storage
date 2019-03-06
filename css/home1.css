@@ -238,6 +238,7 @@ body{
 }
 .mMid .midTop .tLeft dd,
 .mMid .midTop .tRight dd{
+    position: relative;
     float: left;
     width: 38px;
     height: 54px;
@@ -249,6 +250,13 @@ body{
     line-height: 54px;
     text-align: center;
 }
+/*.mMid .midTop .tLeft dd span,*/
+/*.mMid .midTop .tRight dd span{*/
+    /*position: absolute;*/
+    /*top: -100%;*/
+    /*opacity: 0;*/
+/*}*/
+
 .mMid .midCenter{
     display: flex;
     position: absolute;
@@ -297,7 +305,7 @@ body{
     float: left;
 }
 .index span.icon{
-    margin-left: 4px;
+    /* margin-left: 4px; */
 }
 .index .greenUp{
     float: left;
@@ -319,8 +327,70 @@ body{
     padding-top: 69.475452%;
 
 }
-.mMid .midBox .chinaMap{
+.mMid .midBox .center{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -67px;
+    width: 164px;
+    height: 38px;
 
+}
+.mMid .midBox .center .xzBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 40px;
+    height: 40px;
+    background: url(../image/home.png) center no-repeat;
+    background-size: 60% auto;
+}
+.mMid .midBox .center .imgBox{
+    position: absolute;
+    left: 34px;
+    top: 2px;
+    width: 108px;
+    height: 38px;
+    /*background: url(../image/lihuo.jpeg) center no-repeat;*/
+    background: url(../image/center.png) center no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+}
+.mMid .midBox .center .outCir{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url("../image/small-out.png") no-repeat;
+    background-size: 100% auto;
+    z-index: 3;
+    animation:circling2 5s linear 0s infinite;
+}
+.mMid .midBox .center .innerCir{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../image/small-in.png) center no-repeat;
+    background-size: 78% auto;
+    z-index: 3;
+    animation:circling 5s linear 0s infinite;
+}
+.inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../image/small-in.png) no-repeat;
+    background-size: 80% auto;
+    z-index: 3;
+    animation:circling 5s linear 0s infinite;
 }
 .mMid .midBox{
     position: absolute;
@@ -379,6 +449,7 @@ body{
     }
 }
 
+
 .mapIn{
     position: absolute;
     left: 50%;
@@ -399,6 +470,30 @@ body{
     background: url("../image/map-in.png")  center no-repeat;
     background-size: 93% auto;
     animation:circling2 5s linear 0s infinite;
+    z-index: 1;
+    opacity: 0.3;
+}
+.lineBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/line.png")  center no-repeat;
+    background-size: 37% auto;
+    animation:circling2 10s linear 0s infinite;
+    z-index: 1;
+    opacity: 0.3;
+}
+.mapBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../image/map.png")  center no-repeat;
+    background-size: 33% auto;
+    animation:circling 10s linear 0s infinite;
     z-index: 1;
     opacity: 0.3;
 }
@@ -430,7 +525,7 @@ body{
     /*margin: 0;*/
 }
 .indexBox .index  .number{
-    padding: 0 5px;
+    padding: 0 3px;
     height: 20px;
     line-height: 20px;
     font-size: 12px;
@@ -448,4 +543,87 @@ body{
     height: 20px;
     background: url("../image/green-down.png") center no-repeat;
     background-size: 100% auto;
+}
+
+
+/* 波动效果 */
+
+.waterBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 40px;
+    /*margin: 50px auto;*/
+    /* border: 1px solid yellow; */
+}
+.hebei{
+    left: 392px;
+    top: 210px;
+}
+
+.water1 {
+    -webkit-animation: wateranimate 12s 9s ease-out infinite;
+    animation: wateranimate 12s 9s ease-out infinite;
+}
+.water2 {
+    -webkit-animation: wateranimate 12s 6s ease-out infinite;
+    animation: wateranimate 12s 6s ease-out infinite;
+}
+.water3 {
+    -webkit-animation: wateranimate 12s 3s ease-out infinite;
+    animation: wateranimate 12s 3s ease-out infinite;
+}
+.water4 {
+    -webkit-animation: wateranimate 12s 0s ease-out infinite;
+    animation: wateranimate 12s 0s ease-out infinite;
+}
+.water1, .water2, .water3, .water4 {
+    padding: 20%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    border: 1px solid rgba(7,255,244,1);
+    box-shadow: 0 0 120px 30px rgba(7,255,244, 1) inset;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+.water5{
+    padding: 20%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    
+}
+
+@-webkit-keyframes wateranimate {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes wateranimate {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
 }

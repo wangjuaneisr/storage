@@ -123,29 +123,97 @@ button::-moz-focus-inner{padding:0;border:none;}
     position: absolute;
     left: 0;
     top: 0;
-    /*width: 90%;*/
+    width: 90%;
     /*height: 100%;*/
     padding-top: 10%;
     padding-left: 10%;
 }
 .innerLi .storeName{
+    position: relative;
+    padding-left: 6px;
     color: #29B0FF;
 }
 .innerLi .storeName i{
-    position: relative;
-    display: inline-block;
-    width: 20%;
-}
-.innerLi .storeName i:before{
     position: absolute;
     left: 0;
-    top: -5px;
-    content: '';
+    top: 50%;
+    /*display: inline-block;*/
+    width: 4px;
     width: 4px;
     height: 4px;
     background-color: #29B0FF ;
 }
+/*.innerLi .storeName i:before{*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: -5px;*/
+    /*content: '';*/
+
+/*}*/
 .innerLi .storeNumber{
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
 }
+
+
+
+/*水波纹效果*/
+.spliter {
+    width: 100%;
+    height: 20px;
+}
+
+/************以下为具体实现************/
+
+.wave {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 28px;
+}
+
+.wave .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* 波纹效果 */
+.wave.ripple .circle {
+    width: calc(100% - 6px); /* 减去边框的大小 */
+    height: calc(100% - 6px);/* 减去边框的大小 */
+    border: 3px solid #fff;
+}
+
+.wave.ripple .circle:first-child {
+    animation: circle-opacity 2s infinite;
+}
+
+.wave.ripple .circle:nth-child(2) {
+    animation: circle-opacity 2s infinite;
+    animation-delay: .3s;
+}
+
+.wave.ripple .circle:nth-child(3) {
+    animation: circle-opacity 2s infinite;
+    animation-delay: .6s;
+}
+
+.wave.ripple.danger {
+    color: red;
+}
+
+.wave.ripple.danger .circle {
+    border-color: red;
+}
+
+.wave.ripple.warning {
+    color: orange;
+}
+
+.wave.ripple.warning .circle {
+    border-color: orange;
+}
+

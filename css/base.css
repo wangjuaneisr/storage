@@ -123,13 +123,14 @@ button::-moz-focus-inner{padding:0;border:none;}
     position: absolute;
     left: 0;
     top: 0;
-    /*width: 90%;*/
+    width: 90%;
     /*height: 100%;*/
     padding-top: 10%;
     padding-left: 10%;
 }
 .innerLi .storeName{
     color: #29B0FF;
+    text-align: left;
 }
 .innerLi .storeName i{
     position: relative;
