@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+    <title>首页 居上</title>
+    <link rel="stylesheet" href="../css/base1.css">
+    <!--<link rel="stylesheet" href="../css/base.css">-->
+    <link rel="stylesheet" href="../css/home1.css">
+</head>
+<body>
+    <div class="monitorBg">
+
+        <!--头部-->
+        <div class="mHead">
+           <!--<div class="innerHead">-->
+               <div class="logo"></div>
+               <div class="tit">全国仓库监控数据</div>
+
+               <div class="time">2019/02/20   周四  15:00</div>
+               <div class="esc-btn"></div>
+           <!--</div>-->
+        </div>
+
+        <!--内容-->
+        <div class="mContent">
+            <div class="mLeft">
+                <div class="lineBox">
+                    <div class="line line-fir">
+                        <div class="commonBox commonBox160">
+                            <a href="###" class="innerBox">
+                                <i class="file"></i>
+                                <span class="txt">公司简介</span>
+                                <i class="blueGo"></i>
+                            </a>
+                        </div>
+                        <div class="commonBox commonBox160">
+                            <a href="###" class="innerBox">
+                                <span class="txt">扫一扫</span>
+                                <div class="code">
+                                    <div class="innerCode"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="line line-sec">
+                        <div class="tit">
+                            <span>订单分布图</span>
+                            <span class="top">top7 <i></i></span>
+                        </div>
+                        <div class="commonBox commonBox300">
+                            <div class="innerBox">
+                                <div class="circle" id="circleEchart1" style="width: 50%;height: 100%;"></div>
+                                <div class="circle" id="circleEchart2" style="width: 50%;height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-third">
+                        <div class="tit">
+                            <span>近30天出库分布</span>
+                        </div>
+                        <div class="commonBox commonBox300">
+                            <div class="innerBox">
+                                <div class="column" id="columnChart" style="width: 100%;min-height: 150px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mMid">
+                <div class="lineBox">
+                    <div class="midTop">
+                       <div class="innerTop">
+                           <dl class="tLeft">
+                               <dt class="tit">今日出库订单数(件)</dt>
+                               <dd>
+                                   <span>9</span>
+                               </dd>
+                               <dd>
+                                   <span>2</span>
+                               </dd>
+                               <dd>
+                                   <span>2</span>
+                               </dd>
+                               <dd>
+                                   <span>,</span>
+                               </dd>
+                               <dd>
+                                   <span>0</span>
+                               </dd>
+                               <dd>
+                                   <span>1</span>
+                               </dd>
+                           </dl>
+                           <dl class="tLeft">
+                               <dt class="tit">今日出库订单数(件)</dt>
+                               <dd>
+                                   <span>9</span>
+                               </dd>
+                               <dd>
+                                   <span>2</span>
+                               </dd>
+                               <dd>
+                                   <span>2</span>
+                               </dd>
+                               <dd>
+                                   <span>,</span>
+                               </dd>
+                               <dd>
+                                   <span>0</span>
+                               </dd>
+                               <dd>
+                                   <span>1</span>
+                               </dd>
+                               <dd>
+                                   <span>1</span>
+                               </dd>
+                           </dl>
+                       </div>
+                    </div>
+                    <div class="midContainer">
+
+                       <div class="midCenterBox">
+                           <div class="midCenter">
+                               <dl>
+                                   <dt>昨日</dt>
+                                   <dd class="index">
+                                       <span class="num">832998</span>
+                                       <span class="number green"><i class="greenUp"></i><span class="icon">10.41%</span></span>
+                                   </dd>
+                               </dl>
+                               <dl>
+                                   <dt>昨日</dt>
+                                   <dd  class="index">
+                                       <span class="num">832998</span>
+                                       <span class="number red"><i class="redDown"></i><span class="icon">10.41%</span></span>
+                                   </dd>
+                               </dl>
+                           </div>
+
+                           <div class="commonBox commonBox120">
+                               <a href="###" class="innerBox">
+                                   <span class="txt">订单仓库分布图</span>
+                               </a>
+                           </div>
+
+                           <div class="legendLeft">
+                               <ul class="">
+                                   <li>
+                                       <div class="innerLi">
+                                            <div class="storeName"><i></i>仓库1</div>
+                                            <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart6" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart7" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart8" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart9" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart10" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                               </ul>
+                           </div>
+
+                           <div class="legendLeft legendRight">
+                               <ul class="">
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart1" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart2" style="width: 50px;height: 50px;"></div>
+
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart3" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart4" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                                   <li>
+                                       <div class="innerLi">
+                                           <div class="storeName"><i></i>仓库1</div>
+                                           <div class="storeNumber">986</div>
+                                       </div>
+                                       <div class="pieChart" id="pieChart5" style="width: 50px;height: 50px;"></div>
+                                   </li>
+                               </ul>
+                           </div>
+
+                       </div>
+
+
+                        <div class="midBox">
+                            <div class="waterBox hebei">
+                                <div class="water1"></div>
+                                <div class="water2"></div>
+                                <div class="water3"></div>
+                                <div class="water4"></div>
+                                <div class="water5"></div>
+                            </div>
+                            <div class="chinaMap"> </div>
+                            <div class="center">
+                                <div class="xzBox"></div>
+                                <div class="imgBox"></div>
+                                <div class="outCir"></div>
+                                <div class="innerCir"></div>
+                            </div>
+                        </div>
+
+                        <div class="lineBg"></div>
+                        <div class="mapBg"></div>
+
+                        <div class="mapOut">
+                            <div class="inner"></div>
+                        </div>
+                        <div class="mapIn">
+                            <div class="inner"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mRight">
+                <div class="lineBox">
+                    <div class="line line-fir">
+                        <div class="commonBox commonBox228">
+                            <a href="###" class="innerBox">
+                                <i class="check"></i>
+                                <span class="txt">查看各仓储监控大屏</span>
+                                <i class="blueGo"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="line line-third">
+                        <div class="tit">
+                            <span>今日在库品种数</span>
+                            <span class="top">TOP10 <i></i></span>
+                        </div>
+                        <div class="commonBox commonBox300">
+                            <div class="innerBox">
+                                <div class="circle" id="barChart" style="width: 100%;height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-third">
+                        <div class="tit">
+                            <span>近效期的品种数</span>
+                            <span class="top">TOP10 <i></i></span>
+                        </div>
+                        <div class="commonBox commonBox300">
+                            <div class="innerBox">
+                                <ul class="indexBox">
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number red"><i class="redUp"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">华北仓</div>
+                                        <div class="data">1200</div>
+                                        <div class="index">
+                                            <span class="number green"><i class="greenDown"></i><span class="icon">0.41%</span></span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/jquery-3.3.1.min.js"></script>
+<script>
+    function resizeBody(){
+        var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
+            _height = $(document).height() > $('html').height() ? $(document).height() : $('html').height(),
+            _wScale= _width/1680,
+            // _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
+            _scale = _wScale;//以宽度为基准缩放
+        $('.monitorBg').css({
+            "-webkit-transform":"scale("+_scale+")",
+            "-moz-transform":"scale("+_scale+")",
+            "transform":"scale("+_scale+")"
+        });
+    }
+    resizeBody();
+    $(window).resize(function() {
+        resizeBody();
+    });
+</script>
+<script src="../lib/echarts.min.js"></script>
+<script src="../js/home.js"></script>
+<script src="../js/pie.js"></script>
+<script src="../js/pie2.js"></script>
+<script src="../js/bar.js"></script>
+<script src="../js/bar2.js"></script>
+</html>

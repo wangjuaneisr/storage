@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
-    <title>首页</title>
+    <title>首页 垂直居中</title>
     <link rel="stylesheet" href="../css/base1.css">
     <!--<link rel="stylesheet" href="../css/base.css">-->
-    <link rel="stylesheet" href="../css/home1.css">
+    <link rel="stylesheet" href="../css/home2.css">
 </head>
 <body>
     <div class="monitorBg">
@@ -394,15 +394,25 @@
 <script>
     function resizeBody(){
         var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
-            _height = $(document).height() > $('html').height() ? $(document).height() : $('html').height(),
+            _height = $(document).height() <  $('html').height() ? $(document).height() : $('html').height(),
             _wScale= _width/1680,
-            // _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
+            _mheight = (_height-946*_wScale)/2,//以高度来计算top
             _scale = _wScale;//以宽度为基准缩放
+//        console.log(_height);
+        alert($(document).height());
+        alert($('html').height());
+        alert(946*_wScale);
+        alert(_mheight);
+
         $('.monitorBg').css({
             "-webkit-transform":"scale("+_scale+")",
             "-moz-transform":"scale("+_scale+")",
-            "transform":"scale("+_scale+")"
+            "transform":"scale("+_scale+")",
+            "top":_mheight+'px'
         });
+
+//        alert($('.monitorBg').width());
+//        alert($('.monitorBg').height());
     }
     resizeBody();
     $(window).resize(function() {
