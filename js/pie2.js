@@ -41,7 +41,7 @@ function setOptionFun(index){
         series: [{
             name: 'loading',
             type: 'pie',
-            radius: ['64%', '68%'],
+            radius: ['52%', '60%'],
             hoverAnimation: false,
             label: {
                 normal: {
@@ -53,6 +53,7 @@ function setOptionFun(index){
                 itemStyle: {
                     normal: {
                         color: color[index],
+                        opacity:0.6
                         // shadowBlur: 10,
                         //     shadowColor: '#fb358a'
                     }
@@ -61,7 +62,7 @@ function setOptionFun(index){
         },{
             name: 'loading',
             type: 'pie',
-            radius: ['58%', '74%'],
+            radius: ['48%', '64%'],
             hoverAnimation: false,
             label: {
                 normal: {

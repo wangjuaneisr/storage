@@ -35,10 +35,10 @@ button::-moz-focus-inner{padding:0;border:none;}
 .commonBox120{
     position: absolute;
     top: 15%;
-    width: 15.503876%;
+    width: 180px;
     height: 0;
-    padding-top: 5.426356589147287%;
-
+    padding-top: 72px;
+    font-size: 16px;
 }
 .commonBox120 .innerBox{
     /*display: flex;*/
@@ -50,9 +50,14 @@ button::-moz-focus-inner{padding:0;border:none;}
     align-items: center;
 }
 .commonBox228{
-    width: 76.233184%;
+    width: 160px;
     height: 0;
     padding-top: 19.955157%;
+}
+.commonBox160{
+    width: 160px;
+    height: 0;
+    padding-top: 80px;
 }
 .commonBox60{
     width: 19.955157%;
@@ -62,7 +67,7 @@ button::-moz-focus-inner{padding:0;border:none;}
 .commonBox300{
     width: 100%;
     height:0;
-    padding-top: 50.672646%;
+    padding-top:295px;
 }
 .innerBox{
     position: absolute;
@@ -83,9 +88,9 @@ button::-moz-focus-inner{padding:0;border:none;}
 }
 .legendLeft{
     position: absolute;
-    bottom: 3%;
+    bottom: 14%;
     left: 0;
-    width: 17.829457364341086%;
+    width: 120px;
     height: 0;
     padding-top: 46.511627906976744%;
     z-index: 4;
@@ -106,7 +111,7 @@ button::-moz-focus-inner{padding:0;border:none;}
     width: 100%;
     height: 0;
     margin-bottom: 15px;
-    padding-top: 43.478260869565216%;
+    padding-top: 72px;
     background: url("../image/storeBg.png");
     background-size: 100% 100%;
     display: flex;
@@ -130,17 +135,17 @@ button::-moz-focus-inner{padding:0;border:none;}
 }
 .innerLi .storeName{
     position: relative;
-    padding-left: 6px;
+    padding-left: 10px;
+    margin-top: 8px;
     color: #29B0FF;
 }
 .innerLi .storeName i{
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 6px;
     /*display: inline-block;*/
-    width: 4px;
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     background-color: #29B0FF ;
 }
 /*.innerLi .storeName i:before{*/

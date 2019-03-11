@@ -6,7 +6,7 @@ var option = {
     title: {
         text:'电商业务',
         x: 'center',
-        y: '30%',
+        y: '34%',
         textStyle: {
             color: '#29B0ff',
             fontSize: 14,
