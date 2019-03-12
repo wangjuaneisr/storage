@@ -92,12 +92,14 @@ body{
     justify-content: space-between;
 }
 .mLeft{
-    width: 360px;
+    /*width: 360px;*/
+    width: 25%;
     height: 100%;
     padding-top: 20px;
 }
 .mRight{
-    width: 360px;
+    /*width: 360px;*/
+    width: 25%;
     height: 100%;
     padding-top: 20px;
 }
