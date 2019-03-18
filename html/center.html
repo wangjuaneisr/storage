@@ -327,22 +327,22 @@
 </body>
 <script src="../lib/jquery-3.3.1.min.js"></script>
 <script>
-    // function resizeBody(){
-    //     var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
-    //         _height = $(document).height() > $('html').height() ? $(document).height() : $('html').height(),
-    //         _wScale= _width/1680,
-    //         // _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
-    //         _scale = _wScale;//以宽度为基准缩放
-    //     $('.monitorBg').css({
-    //         "-webkit-transform":"scale("+_scale+")",
-    //         "-moz-transform":"scale("+_scale+")",
-    //         "transform":"scale("+_scale+")"
-    //     });
-    // }
-    // resizeBody();
-    // $(window).resize(function() {
-    //     resizeBody();
-    // });
+    function resizeBody(){
+        var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
+            _height = $(document).height() > $('html').height() ? $(document).height() : $('html').height(),
+            _wScale= _width/1680,
+            // _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
+            _scale = _wScale;//以宽度为基准缩放
+        $('.monitorBg').css({
+            "-webkit-transform":"scale("+_scale+")",
+            "-moz-transform":"scale("+_scale+")",
+            "transform":"scale("+_scale+")"
+        });
+    }
+    resizeBody();
+    $(window).resize(function() {
+        resizeBody();
+    });
 </script>
 <script src="../lib/echarts.min.js"></script>
 <script src="../js/home.js"></script>
