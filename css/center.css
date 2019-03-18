@@ -1,5 +1,5 @@
 body,html{
-   overflow: auto;
+   /*overflow: auto;*/
 }
 .mContent{
     top: 84px;
@@ -111,6 +111,7 @@ body,html{
     background-size: 100% auto;
 }
 .sum-box .radial{
+    position: relative;
     width: 164px;
     height: 164px;
     padding-top: 1px;
@@ -118,8 +119,18 @@ body,html{
     background: url("../image/shexian.png") center no-repeat;
     background-size: 100% auto;
 }
+.sum-box .radial .cirImg{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 140px;
+    height: 140px;
+    /*margin:16px auto;*/
+    background: url("../image/cirImg.png") center no-repeat;
+    background-size: 100% auto;
+}
 .numberRadial{
-    margin-top: 60px;
+    margin-top: 50px;
     color: #fff;
     font-size: 20px;
     line-height: 30px;

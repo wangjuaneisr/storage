@@ -93,7 +93,7 @@ button::-moz-focus-inner{padding:0;border:none;}
 }
 .legendLeft{
     position: absolute;
-    bottom: 14%;
+    bottom: 18%;
     left: 0;
     width: 120px;
     height: 0;

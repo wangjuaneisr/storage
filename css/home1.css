@@ -2,13 +2,12 @@ html,body{
     position: relative;
     width:100%;
     height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
     font-family:'Roboto',Helvetica Neue,Helvetica,Arial,PingFang SC,San Francisco,Noto Sans CJK,Heiti,华文细黑,hiragino sans gb,SimSun, sans serif
 }
 body{
     position: relative;
     background-image: linear-gradient(0deg, #041C3E 0%, #16195B 100%);
-    overflow: hidden;
 }
 .monitorBg{
     position: absolute;
@@ -19,10 +18,9 @@ body{
     height: 946px;
     transform-origin: left top 0;
     transform: scale(1);
-    background: url("../image/grid.jpg") no-repeat;
-    background-size: 100% 100%;
-    /*background-image: linear-gradient(0deg, #041C3E 0%, #16195B 100%);*/
     overflow: hidden;
+    background: url("../image/grid.png");
+    background-size: 100% 100%;
 }
 .mHead{
     position: absolute;
@@ -80,7 +78,6 @@ body{
     display: flex;
     width: 100%;
     height: 850px;
-    /*overflow: hidden;*/
 }
 /*布局比例 s*/
 .lineBox{
@@ -335,7 +332,7 @@ body{
 .mMid .midBox .center{
     position: absolute;
     left: 50%;
-    top: 98px;
+    top: 80px;
     margin-left: -82px;
     width: 174px;
     height: 52px;
@@ -404,8 +401,8 @@ body{
     -webkit-transform:translate(-50%, -45%);
     -moz-transform:translate(-50%, -45%);
     transform:translate( -50%, -45%);
-    width: 73.51938%;
-    padding-top: 64.03100%;
+    width: 88.51938%;
+    padding-top: 74.031%;
     margin: 0 auto;
     background: url("../image/china.png") center no-repeat;
     background-size: 100% auto;
@@ -418,7 +415,7 @@ body{
     -webkit-transform:translate(-50%, -45%);
     -moz-transform:translate(-50%, -45%);
     transform:translate( -50%, -45%);
-    width: 73.643411%;
+    width: 89.643411%;
     height: 0;
     padding-top:  73.643411%;
 
@@ -462,7 +459,7 @@ body{
     -webkit-transform:translate(-50%, -45%);
     -moz-transform:translate(-50%, -45%);
     transform:translate( -50%, -45%);
-    width: 54.263566%;
+    width: 62.263566%;
     height: 0;
     padding-top:  54.263566%;
 }
