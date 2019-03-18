@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+    <title>理货中心</title>
+    <link rel="stylesheet" href="../css/base1.css">
+    <!--<link rel="stylesheet" href="../css/base.css">-->
+    <link rel="stylesheet" href="../css/home1.css">
+    <link rel="stylesheet" href="../css/center.css">
+</head>
+<body>
+    <div class="monitorBg">
+
+        <!--头部-->
+        <div class="mHead">
+           <!--<div class="innerHead">-->
+               <div class="logo"></div>
+               <div class="tit">全国仓库监控数据</div>
+
+               <div class="time">2019/02/20   周四  15:00</div>
+               <div class="esc-btn"></div>
+           <!--</div>-->
+        </div>
+
+        <!--内容-->
+        <div class="mContent">
+            <div class="mLeft">
+                <div class="lineBox">
+                    <div class="line line-back">
+                        <div class="go-home">
+                            <i class="back-icon"></i>返回首页
+                        </div>
+                    </div>
+
+                    <div class="line line-sprite">
+                        <div class="tit">
+                            <span>订单分布图</span>
+                        </div>
+                        <div class="commonBox commonBox477">
+                            <ul class="cir-list">
+                                <li>
+                                    <div class="list">
+                                        <div class="innerLi">2,000</div>
+                                        <div class="innerTxt">今日受理货值</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list">
+                                        <div class="innerLi">2,000</div>
+                                        <div class="innerTxt">今日受理货值</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list">
+                                        <div class="innerLi">2,000</div>
+                                        <div class="innerTxt">今日受理货值</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="sum-box">
+                                <div class="radial">
+                                    <div class="numberRadial">12,000</div>
+                                    <div class="txtRadial">已到货商品总数</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-list">
+                        <div class="tit">
+                            <span>订单分布图</span>
+                        </div>
+                        <div class="commonBox commonBox258">
+                           <div class="innerBox">
+                               <table class="order-list" cellpadding="0" cellspacing="0">
+                                   <thead>
+                                   <tr>
+                                       <th>订单号</th>
+                                       <th>车牌号</th>
+                                       <th>司机</th>
+                                       <th>操作</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr>
+                                   <tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr>
+                                   <tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr><tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr><tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr><tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr>
+                                   <tr>
+                                       <td>378236123981</td>
+                                       <td>粤T 123456</td>
+                                       <td>张安</td>
+                                       <td>详情 ></td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mMid">
+                <div class="mCenter">
+                    <i class="before"></i>
+                    <i class="after"></i>
+                </div>
+            </div>
+
+            <div class="mRight">
+                <div class="lineBox">
+                    <div class="line line-fir">
+                        <div class="tit">
+                            <span>发运路线</span>
+                        </div>
+                        <div class="commonBox commonBox168">
+                            <div class="innerBox">
+                                <div class="liquild" id="liquild1"></div>
+                                <div class="liquild" id="liquild2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-third">
+                        <div class="tit">
+                            <span>近30天出库分布</span>
+                        </div>
+                        <div class="commonBox commonBox258">
+                            <div class="innerBox">
+                                <div class="column" id="columnChart" style="width: 100%;min-height: 150px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-list">
+                        <div class="tit">
+                            <span>发运异常</span>
+                        </div>
+                        <div class="commonBox commonBox258">
+                            <div class="innerBox">
+                                <table class="order-list" cellpadding="0" cellspacing="0">
+                                    <thead>
+                                    <tr>
+                                        <th>订单号</th>
+                                        <th>车牌号</th>
+                                        <th>司机</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr><tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr><tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr><tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>378236123981</td>
+                                        <td>粤T 123456</td>
+                                        <td>张安</td>
+                                        <td>详情 ></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../lib/jquery-3.3.1.min.js"></script>
+<script>
+    // function resizeBody(){
+    //     var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
+    //         _height = $(document).height() > $('html').height() ? $(document).height() : $('html').height(),
+    //         _wScale= _width/1680,
+    //         // _mheight = _height > 708?(_height-708*_wScale-20)/2: 0,//以高度来计算top
+    //         _scale = _wScale;//以宽度为基准缩放
+    //     $('.monitorBg').css({
+    //         "-webkit-transform":"scale("+_scale+")",
+    //         "-moz-transform":"scale("+_scale+")",
+    //         "transform":"scale("+_scale+")"
+    //     });
+    // }
+    // resizeBody();
+    // $(window).resize(function() {
+    //     resizeBody();
+    // });
+</script>
+<script src="../lib/echarts.min.js"></script>
+<script src="../js/home.js"></script>
+<!--<script src="../js/pie.js"></script>-->
+<!--<script src="../js/pie2.js"></script>-->
+<script src="../js/bar3.js"></script>
+<!--<script src="../lib/liquild.js"></script>-->
+<script src="../lib/echarts-liquidfill.js"></script>
+<!--<script src="../lib/liquild1.js"></script>-->
+<script src="../js/liquild.js"></script>
+
+</html>

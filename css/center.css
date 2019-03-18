@@ -1,0 +1,212 @@
+body,html{
+   overflow: auto;
+}
+.mContent{
+    top: 84px;
+    height: 850px;
+}
+.mMid{
+    padding: 20px 18px 0;
+}
+.lineBox{
+    justify-content: flex-start;
+}
+.line-back{
+    position: relative;
+}
+.mLeft .line-back,
+.mRight .line-back{
+    padding-top: 7px;
+}
+.mRight .line{
+    display: block;
+}
+.mRight .line-fir{
+    margin-top: 28px;
+}
+.line-back .go-home{
+    position: absolute;
+    top: -32px;
+    display: flex;
+    height: 28px;
+    padding: 0 15px;
+    opacity: 0.5;
+    background: #004599;
+    border-radius: 2px;
+    color: #B4DBFF;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+.line-back .go-home  .back-icon{
+    display: inline-block;
+    width: 14px;
+    height: 28px;
+    margin-right: 10px;
+    background: url("../image/back.png") center no-repeat;
+    background-size: 100% auto;
+}
+.mLeft .line-list,
+.mRight .line-list,
+.mLeft .line-sprite{
+    display: block;
+}
+.line-list .tit,
+.line-sprite .tit{
+    width: 100%;
+}
+.commonBox477{
+    width: 100%;
+    height: 477px;
+}
+.commonBox477 .cir-list{
+    display: flex;
+    width: 100%;
+    height: 210px;
+    justify-content: space-around;
+}
+.commonBox477 .cir-list li{
+    position: relative;
+    margin: 40px 0 50px;
+}
+.commonBox477 .cir-list li .list{
+    width: 86px;
+    height: 86px;
+    padding-top: 1px;
+    background-image: linear-gradient(to bottom,#229FFF,#4D3CEC);
+    border-radius: 80px;
+}
+.commonBox477 .cir-list li .innerLi{
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+    background-color: #091E5C;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 70px;
+    text-align: center;
+}
+.commonBox477 .cir-list li .innerTxt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #29B0FF;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.commonBox258{
+    width: 100%;
+    height: 258px;
+    overflow-y: auto;
+}
+.sum-box{
+    width: 280px;
+    height: 238px;
+    margin: 0 auto;
+    padding-top: 1px;
+    background: url("../image/sum.png") center no-repeat;
+    background-size: 100% auto;
+}
+.sum-box .radial{
+    width: 164px;
+    height: 164px;
+    padding-top: 1px;
+    margin:37px auto;
+    background: url("../image/shexian.png") center no-repeat;
+    background-size: 100% auto;
+}
+.numberRadial{
+    margin-top: 60px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.txtRadial{
+    color: #29B0FF;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.order-list{
+    width: 100%;
+    height: 258px;
+}
+.order-list thead th{
+    height: 30px;
+    padding: 0 0 0 25px;
+    color: #00B6FF;
+    font-size: 12px;
+    text-align: left;
+    line-height: 30px;
+}
+.order-list tbody tr td{
+    /*height: 30px;*/
+    padding: 0 0 0 25px;
+    color: #00B6FF;
+    font-size: 12px;
+    text-align: left;
+    /*line-height: 30px;*/
+}
+.order-list th{
+    color: #fff;
+}
+.order-list tr:nth-child(odd) td{
+    background-color: rgba(25,79,179,0.15);
+}
+.liquild{
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.mCenter{
+    position: relative;
+    height: 514px;
+    background: rgba(9,30,92,0.6);
+}
+.mCenter .before:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/upl.png") center no-repeat;
+    background-size: 100% auto;
+}
+.mCenter .before:after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/right.png") center no-repeat;
+    background-size: 100% auto;
+}
+
+.mCenter .after:before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/left.png") center no-repeat;
+    background-size: 100% auto;
+}
+.mCenter .after:after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/bottom.png") center no-repeat;
+    background-size: 100% auto;
+}
