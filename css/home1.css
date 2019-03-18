@@ -559,10 +559,37 @@ body{
     height: 30px;
 }
 .hebei{
-    left: 454px;
-    top: 235px;
+    left: 476px;
+    top: 217px;
 }
-
+.foshan1{
+    left: 473px;
+    top: 470px;
+}
+.foshan2{
+    left: 463px;
+    top: 449px;
+}
+.foshan3{
+    left: 442px;
+    top: 478px;
+}
+.foshan4{
+    left: 456px;
+    top: 466px;
+}
+.guangzhou{
+    left: 492px;
+    top: 457px;
+}
+.kaiping{
+    left: 510px;
+    top: 457px;
+}
+.shanghai{
+    left: 562px;
+    top: 326px;
+}
 .water1 {
     -webkit-animation: wateranimate 12s 9s ease-out infinite;
     animation: wateranimate 12s 9s ease-out infinite;
