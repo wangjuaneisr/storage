@@ -22,7 +22,7 @@ body,html{
     display: block;
 }
 .mRight .line-fir{
-    margin-top: 28px;
+    margin-top: 8px;
 }
 .line-back .go-home{
     position: absolute;
@@ -166,7 +166,8 @@ body,html{
 
 .mCenter{
     position: relative;
-    height: 514px;
+    height: 490px;
+    padding-top: 24px;
     background: rgba(9,30,92,0.6);
 }
 .mCenter .before:before{
@@ -209,4 +210,164 @@ body,html{
     height: 32px;
     background: url("../image/bottom.png") center no-repeat;
     background-size: 100% auto;
+}
+.mainData{
+    height: 180px;
+    margin: 0 30px 24px;
+    background: url("../image/jxbg.png");
+    background-size: 100% auto;
+}
+.compare-box{
+    position: relative;
+}
+.compare-box li{
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+    text-align: center;
+}
+.compare-box li .tit{
+    font-size: 14px;
+    color: #29B0FF;
+}
+.compare-box li .data{
+    font-size: 48px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.compare-box li .index{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    line-height: 28px;
+}
+.compare-box li .index .txt{
+    font-size: 12px;
+    color: #fff;
+}
+.compare-box li .index .num{
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.mMid-box{
+    display: flex;
+    margin: 0 32px;
+}
+.mMid-box li{
+    width: 50%;
+}
+.mMid-box li .tit{
+    padding-bottom: 6px;
+    padding-left: 4px;
+    background: url("../image/titLine.png") bottom left no-repeat;
+    background-size: 280px auto;
+    font-size: 10px;
+    color: #29B0FF;
+    line-height: 30px;
+}
+.mMid-box li dl{
+    width: 100%;
+    height: 100%;
+}
+.mMid-box li dl dd{
+    display: flex;
+    float: left;
+    width: 50%;
+    padding-top: 48px;
+    height: 50px;
+}
+.mMid-box li dl dd .icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background: url("../image/icon01.png") no-repeat;
+    background-size: 100% auto;
+}
+.mMid-box li dl dd:nth-child(2) .icon{
+    background: url("../image/icon02.png") no-repeat;
+    background-size: 100% auto;
+}
+.mMid-box li dl dd:nth-child(3) .icon{
+    background: url("../image/icon03.png") no-repeat;
+    background-size: 100% auto;
+}
+.mMid-box li dl dd:nth-child(4) .icon{
+    background: url("../image/icon04.png") no-repeat;
+    background-size: 100% auto;
+}
+.mMid-box li dl dd .desc{}
+.mMid-box li dl dd .desc .dat{
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.mMid-box li dl dd .desc .txt{
+    font-size: 12px;
+    color: #3984FF;
+    line-height: 20px;
+}
+
+.mBottom{
+    height: 298px;
+    margin-top: 20px;
+}
+.mBottom .tran-road{
+    position: relative;
+    background: url("../image/linebg.png")  no-repeat;
+    background-position-x: center;
+    background-position-y: 106px;
+    background-size: 567px auto;
+}
+.mBottom .tran-road .light{
+    position: absolute;
+    left: 50px;
+    top: 48px;
+    width: 130px;
+    height: 200px;
+    background: url("../image/timebg.png") top no-repeat;
+    background-size: 98px auto;
+}
+.mBottom .tran-road .light .time{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 130px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.mBottom .tran-road .light .txt{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 130px;
+    font-size: 12px;
+    color: #29B0FF;
+    text-align: center;
+}
+.mBottom .tran-road .light .txt i{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-image: linear-gradient(-180deg, #445EFF 0%, #812CFF 100%);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: center;
+}
+.mBottom .tran-road .light:nth-child(2){
+    left: 250px;
+    top: 10px;
+}
+.mBottom .tran-road .light:nth-child(3){
+    left: 450px;
+}
+.mBottom .tran-road .light:nth-child(4){
+    left: 650px;
+    top: 10px;
 }

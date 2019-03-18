@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="line line-list">
-                        <div class="tit">
+                        <div class="tit mt20">
                             <span>订单分布图</span>
                         </div>
                         <div class="commonBox commonBox258">
@@ -133,8 +133,105 @@
 
             <div class="mMid">
                 <div class="mCenter">
+                    <!--四角-->
                     <i class="before"></i>
                     <i class="after"></i>
+
+                    <!--内容-->
+                    <div class="mainData">
+
+                        <ul class="compare-box">
+                            <li>
+                                <div class="tit">今日出库订单数(件)</div>
+                                <div class="data">190,011</div>
+                                <div class="index">
+                                    <span class="txt">昨日</span>
+                                    <span class="num">832998</span>
+                                    <span class="number green"><i class="greenUp"></i><span class="icon">10.41%</span></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tit">今日出库订单数(件)</div>
+                                <div class="data">190,011</div>
+                                <div class="index">
+                                    <span class="txt">昨日</span>
+                                    <span class="num">832998</span>
+                                    <span class="number red"><i class="redDown"></i><span class="icon">10.41%</span></span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <ul class="mMid-box">
+                        <li>
+                            <div class="tit">订单状态比例</div>
+                            <div class="liPie" id="liPie" style="width: 100%;height: 100%;">
+
+                            </div>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="tit">订单统计</dt>
+                                <dd>
+                                    <i class="icon"></i>
+                                    <div class="desc">
+                                        <div class="dat">8,091</div>
+                                        <div class="txt">拣货中</div>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <i class="icon"></i>
+                                    <div class="desc">
+                                        <div class="dat">8,091</div>
+                                        <div class="txt">拣货中</div>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <i class="icon"></i>
+                                    <div class="desc">
+                                        <div class="dat">8,091</div>
+                                        <div class="txt">拣货中</div>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <i class="icon"></i>
+                                    <div class="desc">
+                                        <div class="dat">8,091</div>
+                                        <div class="txt">拣货中</div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="line mBottom">
+                    <div class="tit">
+                        <span>发运路线</span>
+                    </div>
+                    <div class="commonBox commonBox258">
+                        <div class="innerBox tran-road">
+                            <div class="light">
+                                <div class="time">0.8h</div>
+                                <div class="txt"><i>1</i><span>理货中心时效</span></div>
+                            </div>
+                            <div class="light">
+                                <div class="time">1.8h</div>
+                                <<div class="txt"><i>2</i><span>理货中心时效</span></div>
+                            </div>
+                            <div class="light">
+                                <div class="time">2.8h</div>
+                                <div class="txt"><i>3</i><span>理货中心时效</span></div>
+                            </div>
+                            <div class="light">
+                                <div class="time">4.8h</div>
+                                <div class="txt"><i>4</i><span>理货中心时效</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -152,7 +249,7 @@
                         </div>
                     </div>
                     <div class="line line-third">
-                        <div class="tit">
+                        <div class="tit mt20">
                             <span>近30天出库分布</span>
                         </div>
                         <div class="commonBox commonBox258">
@@ -256,5 +353,6 @@
 <script src="../lib/echarts-liquidfill.js"></script>
 <!--<script src="../lib/liquild1.js"></script>-->
 <script src="../js/liquild.js"></script>
+<script src="../js/lihuoPie.js"></script>
 
 </html>
