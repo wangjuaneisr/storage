@@ -19,7 +19,7 @@ body{
     transform-origin: left top 0;
     transform: scale(1);
     overflow: hidden;
-    background: url("../image/grid.png");
+    /*background: url("../image/grid.j");*/
     background-size: 100% 100%;
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,7 @@ body{
     width: 830px;
 }
 .left-box li,.right-box li{
+    /*height: 380px;*/
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
@@ -46,12 +47,17 @@ body{
     height: 624px;
 }
 .small{
+    /*float: left;*/
     width: 410px;
     height: 308px;
 }
 .right-box li .small{
-    margin-right: 10px;
+    margin-right: 20px;
 }
+.right-box li .small:last-child{
+    margin-right: 0;
+}
+
 /*.left-box li video,.right-box li video{*/
     /*margin-right: 10px;*/
 /*}*/

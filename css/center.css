@@ -147,20 +147,33 @@ body,html{
     height: 258px;
 }
 .order-list thead th{
+    position: relative;
     height: 30px;
-    padding: 0 0 0 25px;
+    /*padding: 0 0 0 5px;*/
     color: #00B6FF;
     font-size: 12px;
     text-align: left;
     line-height: 30px;
 }
 .order-list tbody tr td{
+    position: relative;
     /*height: 30px;*/
-    padding: 0 0 0 25px;
+    padding: 0 0 0 5px;
     color: #00B6FF;
     font-size: 12px;
     text-align: left;
     /*line-height: 30px;*/
+}
+.order-list thead th div.mini,
+.order-list tbody tr td div.mini{
+    font-size: 12px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform-origin: left top 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
 }
 .order-list th{
     color: #fff;
