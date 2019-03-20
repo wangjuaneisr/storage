@@ -166,6 +166,7 @@ body,html{
 }
 .order-list thead th div.mini,
 .order-list tbody tr td div.mini{
+    color: #00B6FF;
     font-size: 12px;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
@@ -174,6 +175,9 @@ body,html{
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+}
+.order-list a{
+    color: #00B6FF;
 }
 .order-list th{
     color: #fff;

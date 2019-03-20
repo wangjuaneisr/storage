@@ -1,7 +1,7 @@
 body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4{margin:0;padding:0;list-style:none;}
 body,button,input,select,textarea{font:12px 'Roboto',Helvetica Neue,Helvetica,Arial,PingFang SC,San Francisco,Noto Sans CJK,Heiti,华文细黑,hiragino sans gb,SimSun, sans serif;color:#333;}
 input,select,textarea{font-size:100%;}
-a{text-decoration:none;color:#333;}
+a{text-decoration:none;}
 a:hover{text-decoration:none;}
 a.blue_link{color:#06c;}
 a.blue_link:hover{color:#f60;}
