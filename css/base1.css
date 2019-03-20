@@ -89,7 +89,6 @@ button::-moz-focus-inner{padding:0;border:none;}
     linear-gradient(to left, #56AEFF, #56AEFF) right bottom no-repeat,
     linear-gradient(to left, #56AEFF, #56AEFF) right bottom no-repeat;
     background-size: 2px 10px, 10px 2px, 2px 10px, 10px 2px;
-
 }
 .legendLeft{
     position: absolute;

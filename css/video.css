@@ -25,22 +25,46 @@ body{
     justify-content: space-between;
 }
 .left-box{
-   width: 830px;
+   width: 835px;
 }
 .right-box{
-    width: 830px;
+    width: 834px;
+}
+video{
+    width: 100%;
+    height: 100%;
 }
 .left-box li,.right-box li{
+    position: relative;
     /*height: 380px;*/
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.right-box li{
+    margin-bottom: 8px;
+}
+li .innerBox{
+    border: 1px #56AEFF solid;
+}
+.left-box li .innerBox,.right-box li .innerBox{
+    position: relative;
+    background: none;
+}
+.right-box li .innerBox,.left-box li .innerBox{
+    width: 410px;
+    height: 308px;
+}
+
+.left-box li.biggest .innerBox{
+    width: 830px;
+    height: 624px;
 }
 .left-box li:last-child,.right-box li:last-child{
     padding-bottom: 0;
 }
 .right-box li{
-    width: 830px;
+    /*width: 830px;*/
 }
 .big{
     width: 830px;
@@ -57,7 +81,95 @@ body{
 .right-box li .small:last-child{
     margin-right: 0;
 }
-
+.tit-box{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 192px;
+    height: 22px;
+    /*padding: 0 45px;*/
+    margin-left: -96px;
+    background: url("../image/videoTitBg.png");
+    background-size: 100% 100%;
+    z-index: 1;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.tit-box .left{
+    width: 20px;
+    height: 10px;
+    margin: 6px;
+    background: url("../image/le.png") center no-repeat;
+    background-size: 100% auto;
+}
+.tit-box .right{
+    width: 20px;
+    height: 10px;
+    margin: 6px;
+    background: url("../image/ri.png") center no-repeat;
+    background-size: 100% auto;
+    align-items: center;
+}
+li .top,li .bot{
+    /*position: relative;*/
+}
+li .top:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url("../image/leUp.png");
+    background-size: 100% 100%;
+    z-index: 1;
+}
+li .top:before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url("../image/riUp.png");
+    background-size: 100% 100%;
+    z-index: 1;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	/* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 	/* Opera */
+}
+li .bot:after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url("../image/riDown.png");
+    background-size: 100% 100%;
+    z-index: 1;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
+}
+li .bot:before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url("../image/leDown.png");
+    background-size: 100% 100%;
+    z-index: 1;
+}
 /*.left-box li video,.right-box li video{*/
     /*margin-right: 10px;*/
 /*}*/
