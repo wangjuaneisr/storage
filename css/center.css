@@ -177,7 +177,11 @@ body,html{
     text-align: center;
 }
 .order-list a{
+    display: block;
     color: #00B6FF;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform-origin: left top 0;
 }
 .order-list th{
     color: #fff;
