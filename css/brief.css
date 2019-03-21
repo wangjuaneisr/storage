@@ -1,0 +1,196 @@
+.lineBox{
+    justify-content: flex-start;
+}
+.line-back{
+    position: relative;
+}
+.mLeft .line-back,
+.mRight .line-back{
+    padding-top: 7px;
+}
+.mRight .line{
+    display: block;
+}
+.mRight .line-fir{
+    margin-top: 8px;
+}
+.line-back .go-home{
+    position: absolute;
+    top: -32px;
+    display: flex;
+    height: 28px;
+    padding: 0 15px;
+    opacity: 0.5;
+    background: #004599;
+    border-radius: 2px;
+    color: #B4DBFF;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+.line-back .go-home  .back-icon{
+    display: inline-block;
+    width: 14px;
+    height: 28px;
+    margin-right: 10px;
+    background: url("../image/back.png") center no-repeat;
+    background-size: 100% auto;
+}
+.mLeft{
+    width: 326px;
+}
+.sideBar{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.side{
+    width: 155px;
+    height: 664px;
+    padding-top: 1px;
+    background: url("../image/sideBg.png") left top no-repeat;
+    background-size: 34px 664px;
+}
+.side .tab{
+    width: 134px;
+    height: 44px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: url("../image/tabBg.png") no-repeat;
+    background-size: 100% auto;
+    color: #B4DBFF;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+.side .cur{
+    color: #fff;
+}
+
+.brief-box{
+     position: relative;
+     flex: auto;
+    padding-top: 80px;
+ }
+.brief{
+    position: relative;
+    width: 1028px;
+    height: 600px;
+    padding: 30px 26px;
+}
+.brief .before:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/upl.png") center no-repeat;
+    background-size: 100% auto;
+}
+.brief .before:after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/right.png") center no-repeat;
+    background-size: 100% auto;
+}
+
+.brief .after:before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/left.png") center no-repeat;
+    background-size: 100% auto;
+}
+.brief .after:after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url("../image/bottom.png") center no-repeat;
+    background-size: 100% auto;
+}
+.slideBg{
+    width: 1028px;
+    height: 600px;
+    background: url("../image/slideBg.png") center no-repeat;
+    background-size: 100% auto;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.container .list{
+    position: relative;
+    width: 968px;
+    height: 540px;
+    margin: 30px;
+}
+.container .list li{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 968px;
+    height: 540px;
+    overflow-y: auto;
+}
+.container .list li.cur{
+    display: block;
+}
+.container .list li img{
+    display: block;
+    width: 968px;
+    height: 384px;
+}
+.container .list li p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #A7C5EE;
+    line-height: 20px;
+}
+.container .list li .titImg{
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 215px;
+    height: 48px;
+    background: url("../image/slideTit.png") no-repeat;
+    background-size: 100% auto;
+    font-size: 20px;
+    color: #E3E3E3;
+    letter-spacing: 1px;
+    line-height: 48px;
+    text-indent: 20px;
+}
+.container .list-control{
+    position: absolute;
+    right: -100px;
+    top: 236px;
+    width: 14px;
+    height: 110px;
+}
+.container .list-control li{
+    width: 14px;
+    height: 14px;
+    margin-bottom: 5px;
+    background: #39B0F8;
+    font-size: 12px;
+    color: #0D1B51;
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.container .list-control li.cur{
+    opacity: 1;
+}
