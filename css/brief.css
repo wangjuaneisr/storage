@@ -134,7 +134,7 @@
     position: relative;
     width: 968px;
     height: 540px;
-    margin: 30px;
+    margin:0 30px;
 }
 .container .list li{
     display: none;
