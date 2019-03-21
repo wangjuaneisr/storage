@@ -103,6 +103,7 @@ body,html{
     overflow-y: auto;
 }
 .sum-box{
+    position: relative;
     width: 280px;
     height: 238px;
     margin: 0 auto;
@@ -111,18 +112,21 @@ body,html{
     background-size: 100% auto;
 }
 .sum-box .radial{
-    position: relative;
+    position: absolute;
+    left: 57px;
+    top: 0;
     width: 164px;
     height: 164px;
     padding-top: 1px;
     margin:37px auto;
     background: url("../image/shexian.png") center no-repeat;
     background-size: 100% auto;
+    animation:circling 5s linear 0s infinite;
 }
-.sum-box .radial .cirImg{
+.sum-box .cirImg{
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 70px;
+    top: 50px;
     width: 140px;
     height: 140px;
     /*margin:16px auto;*/

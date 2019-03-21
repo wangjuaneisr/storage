@@ -434,23 +434,6 @@ body{
     z-index: 1;
     opacity: 0.3;
 }
-@keyframes circling{
-     from{
-         transform:rotate(0deg);
-     }
-     to{
-         transform:rotate(360deg);
-     }
- }
-@keyframes circling2{
-    from{
-        transform:rotate(0deg);
-    }
-    to{
-        transform:rotate(-360deg);
-    }
-}
-
 
 .mapIn{
     position: absolute;
@@ -670,4 +653,30 @@ body{
         transform: scale(2);
         opacity: 0;
     }
+}
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+}
+.pop{
+    position: absolute;
+    top: 98px;
+    left: 402px;
+    width: 796px;
+    height: 698px;
+    padding: 60px 40px;
+    background: #091E5C;
+    box-shadow: inset 0 0 40px 0 rgba(36,147,255,0.25);
+}
+.closeBtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    background: url("../image/closeBtn.png") center no-repeat;
+    background-size: 50% auto;
 }

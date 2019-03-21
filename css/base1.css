@@ -21,6 +21,24 @@ button::-moz-focus-inner{padding:0;border:none;}
 .mb{margin-bottom:10px;}
 .none{display:none;}
 
+@keyframes circling{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+@keyframes circling2{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-360deg);
+    }
+}
+
+
 .commonBox{
     position: relative;
     /*margin: 20px 10px 0;*/
