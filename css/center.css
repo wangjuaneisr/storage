@@ -24,28 +24,7 @@ body,html{
 .mRight .line-fir{
     margin-top: 8px;
 }
-.line-back .go-home{
-    position: absolute;
-    top: -32px;
-    display: flex;
-    height: 28px;
-    padding: 0 15px;
-    opacity: 0.5;
-    background: #004599;
-    border-radius: 2px;
-    color: #B4DBFF;
-    font-size: 12px;
-    line-height: 28px;
-    text-align: center;
-}
-.line-back .go-home  .back-icon{
-    display: inline-block;
-    width: 14px;
-    height: 28px;
-    margin-right: 10px;
-    background: url("../image/back.png") center no-repeat;
-    background-size: 100% auto;
-}
+
 .mLeft .line-list,
 .mRight .line-list,
 .mLeft .line-sprite{

@@ -283,3 +283,29 @@ button::-moz-focus-inner{padding:0;border:none;}
     background-size: 50% auto;
     cursor: pointer;
 }
+
+
+.line-back .go-home{
+    position: absolute;
+    top: -32px;
+    display: flex;
+    width: 118px;
+    height: 28px;
+    opacity: 0.5;
+    background: #004599;
+    border-radius: 2px;
+    color: #B4DBFF;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    z-index: 10;
+    justify-content: center;
+}
+.line-back .go-home  .back-icon{
+    display: inline-block;
+    width: 14px;
+    height: 28px;
+    margin-right: 10px;
+    background: url("../image/back.png") center no-repeat;
+    background-size: 100% auto;
+}

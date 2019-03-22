@@ -24,6 +24,12 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.line-back{
+    position: fixed;
+    left: 20px;
+    top: 60px;
+    z-index: 100;
+}
 .left-box{
    width: 835px;
 }
