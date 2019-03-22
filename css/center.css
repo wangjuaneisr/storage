@@ -107,7 +107,6 @@ body,html{
     margin:37px auto;
     background: url("../image/shexian.png") center no-repeat;
     background-size: 100% auto;
-    animation:circling 5s linear 0s infinite;
 }
 .sum-box .cirImg{
     position: absolute;
