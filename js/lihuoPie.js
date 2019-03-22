@@ -2,13 +2,13 @@ var liPie = echarts.init(document.getElementById('liPie'));
 
 var jsonData={
     data:[{
-        value: 50,name: '5天妥投率'
+        value: 50,name: '5天妥投率 30%'
     }, {
-        value: 55,name: '6天妥投率'
+        value: 55,name: '6天妥投率 35%'
     }, {
-        value: 25,name: "7天妥投率"
+        value: 25,name: "7天妥投率 15%"
     }, {
-        value: 25,name: "超7天妥投率"
+        value: 25,name: "超7天妥投率 15%"
     }],
 }
 
@@ -33,20 +33,19 @@ echarts.util.each(jsonData.data, function(item, index) {
 var option = {
     legend: {
         top: 'center',
-        right:30,
+        right:10,
         // x: 'center',
         icon: 'circle',
         width:'20%',
         itemGap:20,
-        data: jsonData.legend,
         textStyle:{
-            color:'#fff'
+            color:'#fff',
         },
+
     },
     series: [{
         type: 'pie',
         name: 'pie',
-
         radius: ['70%', '90%'],
         center:['30%','52%'],
         hoverAnimation: false, //设置饼图默认的展开样式
