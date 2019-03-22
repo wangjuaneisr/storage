@@ -90,6 +90,13 @@ body,html{
     background: url("../image/sum.png") center no-repeat;
     background-size: 100% auto;
 }
+.sum-box:after{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: '';
+
+}
 .sum-box .radial{
     position: absolute;
     left: 57px;
@@ -104,13 +111,14 @@ body,html{
 }
 .sum-box .cirImg{
     position: absolute;
-    left: 70px;
+    left: 71px;
     top: 50px;
     width: 140px;
     height: 140px;
     /*margin:16px auto;*/
     background: url("../image/cirImg.png") center no-repeat;
     background-size: 100% auto;
+    z-index: 10;
 }
 .numberRadial{
     margin-top: 50px;
@@ -398,3 +406,15 @@ svg {
 svg .path { stroke-dasharray: 800; stroke-dashoffset: 0; animation: dash 1s linear; }
 
 svg @keyframes dash { from { stroke-dashoffset: 800; } to { stroke-dashoffset: 0; } }
+
+.water1, .water2, .water3, .water4 {
+    padding: 20%;
+    position: absolute;
+    left: 30%;
+    top: 26%;
+    border: 1px solid rgba(68,113,224,1);
+    box-shadow: 0 0 120px 30px rgba(68,113,224, 1) inset;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+}
