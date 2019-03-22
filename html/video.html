@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>视频</title>
     <link rel="stylesheet" href="../css/base1.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/video.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script>
 </head>
 <body>
 <div class="monitorBg">
@@ -26,9 +29,13 @@
                 </div>
                 <div class="top"></div>
                 <div class="bot"></div>
-                <video width="828" height="622" controls="controls" autoplay="autoplay" class="big">
+                <!--<video width="828" height="622" controls="controls" autoplay="autoplay" class="big" crossOrigin = '*'>-->
+                    <!--<source src="../image/video.mp4" type="video/mp4">-->
+                    <!--Your browser does not support the video tag.-->
+                <!--</video>-->
+                <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" style="width: 828px;height: 622px;"
+                       poster="http://vjs.zencdn.net/v/oceans.png">
                     <source src="http://183.63.131.51:6713/mag/hls/0b93a7b45f34402984bea8da7f66bbcc/1/live.m3u8" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
             </div>
         </li>
@@ -154,6 +161,7 @@
 
 </body>
 <script src="../lib/jquery-3.3.1.min.js"></script>
+<!--<script src="http://183.63.131.51:6713/mag/hls/0b93a7b45f34402984bea8da7f66bbcc/1/live.m3u8"></script>-->
 <script>
     function resizeBody(){
         var _width = $(document).width() < $('html').width() ? $(document).width() : $('html').width(),
@@ -171,5 +179,15 @@
     $(window).resize(function() {
         resizeBody();
     });
+
+    var player = videojs('example_video_1',{
+        muted: true,
+        controls : true/false,
+        height:300,
+        width:300,
+        loop : true,
+        // 更多配置.....
+    });
+
 </script>
 </html>

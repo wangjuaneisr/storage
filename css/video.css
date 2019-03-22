@@ -179,3 +179,10 @@ li .bot:before{
 /*.left-box li video,.right-box li video{*/
     /*margin-right: 10px;*/
 /*}*/
+
+.video-js .vjs-big-play-button{
+    top: auto;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -1.5em;
+}
