@@ -180,6 +180,9 @@ body,html{
     text-overflow: ellipsis;
     text-align: center;
 }
+.order-list tbody tr td .detail{
+    cursor: pointer;
+}
 .order-list a{
     display: block;
     color: #00B6FF;
@@ -407,3 +410,12 @@ body,html{
     left: 650px;
     top: 10px;
 }
+
+svg {
+    width: 567px;
+    display: block;
+    position: absolute;
+  }
+svg .path { stroke-dasharray: 800; stroke-dashoffset: 0; animation: dash 1s linear; }
+
+svg @keyframes dash { from { stroke-dashoffset: 800; } to { stroke-dashoffset: 0; } }

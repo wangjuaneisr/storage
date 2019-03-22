@@ -233,40 +233,48 @@
                         </div>
 
                         <!--<svg style="position: absolute;width: 100%;height: 100%;">-->
-                        <svg style="position: absolute;bottom:22px;left:50%;margin-left:-283px;width:567px;height: 220px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice">
+                        <svg style="position: absolute;bottom:-58px;left:50%;margin-left:-283px;width:567px;height: 220px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice">
                             <!--<polyline points="0,84 250,0 444,111 567,43" fill="none" stroke="black" />-->
                             <!--<path id="a" fill="none"  stroke-width="1" d="M0,173 L49,200 250,89 444,200 567,131"/>-->
-                            <path id="a" fill="none"  stroke-width="1" d="M0,84 L49,111 250,0 444,111 567,43"/>
-
-                            <defs>
-                                <filter id="f1" x="0" y="0">
-                                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
-                                </filter>
-                            </defs>
+                            <path class="path" id="a" fill="none"  stroke-width="1"  stroke="#000" d="M-10 94 L49 122 L250 10 L444 122 L567 53"/>
 
 
                             <!-- Red shape on the motion path. -->
-                            <circle r="10" fill="red" transform="translate(-5,86)">
-                                <!-- Define the motion path animation for the shape-->
-                                <animateMotion dur="6s" repeatCount="indefinite" >
-                                    <mpath xlink:href="#a"/>
-                                </animateMotion>
-                            </circle>
+                            <!--<circle r="10" fill="#1F57FF" transform="translate(-10,0)">-->
+                                <!--&lt;!&ndash; Define the motion path animation for the shape&ndash;&gt;-->
 
-                            <!-- Text on the motion path -->
-                            <text fill="red" font-family="monospace" font-size="20">
-                                <!--<tspan x="0" y="-20" text-anchor="middle"> 物体 </tspan>-->
-                                <!-- Define the motion path animation for the text-->
-                                <animateMotion dur="6s" repeatCount="indefinite">
+                                <!--<animateMotion dur="6s" repeatCount="indefinite" >-->
+                                    <!--<mpath xlink:href="#a"/>-->
+                                <!--</animateMotion>-->
+                            <!--</circle>-->
 
-                                    <mpath xlink:href="#a"/>
+                            <image id="car" transform="translate(-25,-25)" style="overflow:visible;" width="50px" height="50px" xlink:href="../image/tw.png">
+                                <!--<animate  repeatCount="indefinite" />-->
+                            </image>
 
-                                </animateMotion>
-                            </text>
+                            <animateMotion dur="6s" repeatCount="indefinite" xlink:href="#car">
+                                <mpath xlink:href="#a"/>
+                            </animateMotion>
+
 
                         </svg>
 
 
+                        <!--<svg width="500" height="350" viewBox="0 0 500 350">-->
+                            <!--&lt;!&ndash;运动的路径轨迹&ndash;&gt;-->
+                            <!--<path style="fill:none;" stroke="#000"  id="motionPath" d="M0.038,0c0,0-2.25,26.75,27.75,42.25c11.501,5.942,36.167,25.667,42.5,29.583-->
+        <!--c5.465,3.38,37.333,22.667-11.125,55.917"/>-->
+
+                            <!--&lt;!&ndash;运动的图片&ndash;&gt;-->
+                            <!--<image id="car" transform="translate(-72,-72)" style="overflow:visible;" width="144px" height="144px" xlink:href="images/light.png">-->
+                                <!--<animate attributeName="opacity" values="0;1;1;1;1;0" dur="3s" repeatCount="indefinite" />-->
+                            <!--</image>-->
+
+                            <!--&lt;!&ndash;运动的相关参数  1、href链接到图片   mpath链接到路径&ndash;&gt;-->
+                            <!--<animateMotion xlink:href="#car" dur="3s" begin="0s" fill="freeze" repeatCount="indefinite">-->
+                                <!--<mpath xlink:href="#motionPath" />-->
+                            <!--</animateMotion>-->
+                        <!--</svg>-->
 
                     </div>
 
@@ -317,40 +325,40 @@
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">查看详情</div></td>
                                 </tr>
                                 <tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">查看详情</div></td>
                                 </tr>
                                 <tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">12131</div></td>
                                 </tr><tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">查看详情</div></td>
                                 </tr><tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">查看详情</div></td>
                                 </tr><tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">查看详情</div></td>
                                 </tr>
                                 <tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini">12131</div></td>
+                                    <td><div class="mini detail">12131</div></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -361,7 +369,12 @@
             </div>
         </div>
     </div>
-
+    <div class="mask">
+        <div class="pop">
+            <div class="closeBtn"></div>
+            <iframe src="https://demo.otms.cn/mp/?tab=ALL#/order-preview/8CA2A88DFD4F959419BE652442B8BC99/ee0c0960d160afa20bfb71b086a84dec?_k=005if6" width="796" height="698" frameborder="0" style="position: fixed;z-index: 10;background-color: #fff"></iframe>
+        </div>
+    </div>
 </div>
 </body>
 <script src="../lib/jquery-3.3.1.min.js"></script>
@@ -382,15 +395,17 @@
     $(window).resize(function() {
         resizeBody();
     });
+    
+    $('.detail').click(function () {
+        $('.mask').fadeIn();
+    })
+    $('.closeBtn').click(function () {
+        $('.mask').fadeOut();
+    })
 </script>
 <script src="../lib/echarts.min.js"></script>
-<script src="../js/home.js"></script>
-<!--<script src="../js/pie.js"></script>-->
-<!--<script src="../js/pie2.js"></script>-->
 <script src="../js/bar3.js"></script>
-<!--<script src="../lib/liquild.js"></script>-->
 <script src="../lib/echarts-liquidfill.js"></script>
-<!--<script src="../lib/liquild1.js"></script>-->
 <script src="../js/liquild.js"></script>
 <script src="../js/lihuoPie.js"></script>
 
