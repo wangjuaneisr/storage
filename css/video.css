@@ -176,10 +176,6 @@ li .bot:before{
     background-size: 100% 100%;
     z-index: 1;
 }
-/*.left-box li video,.right-box li video{*/
-    /*margin-right: 10px;*/
-/*}*/
-
 .video-js .vjs-big-play-button{
     top: auto;
     left: 50%;
