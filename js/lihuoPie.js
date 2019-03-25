@@ -2,13 +2,13 @@ var liPie = echarts.init(document.getElementById('liPie'));
 
 var jsonData={
     data:[{
-        value: 50,name: '5天妥投率 30%'
+        value: 50,name: '5天妥投率 30.99%'
     }, {
-        value: 55,name: '6天妥投率 35%'
+        value: 55,name: '6天妥投率 35.88%'
     }, {
-        value: 25,name: "7天妥投率 15%"
+        value: 25,name: "7天妥投率 15.44%"
     }, {
-        value: 25,name: "超7天妥投率 15%"
+        value: 25,name: "超7天妥投率 15.77%"
     }],
 }
 
@@ -33,13 +33,14 @@ echarts.util.each(jsonData.data, function(item, index) {
 var option = {
     legend: {
         top: 'center',
-        right:10,
+        right:0,
         // x: 'center',
         icon: 'circle',
         width:'20%',
         itemGap:20,
         textStyle:{
             color:'#fff',
+            fontSize:8
         },
 
     },
