@@ -14,7 +14,7 @@ var option = {
     },
     tooltip: {
         show:false,
-        trigger: 'item',
+        // trigger: 'item',
         // formatter: "{a} <br/>{b}: {c} ({d}%)"
     },
     grid: {
@@ -26,23 +26,23 @@ var option = {
     },
      legend: {
          icon:'circle',
-         // orient: 'vertical',
+         orient: 'vertical',
          show: true,
-         right: '0',
-         top:'75%',
-         bottom: '0',
-         itemGap:1,
+         left: '20',
+         top:'70%',
+         // bottom:'50',
+         itemGap:5,
          itemWidth:4,
          itemHeight:4,
          width:'auto',
-         height:'auto',
+         height:'25%',
          padding:2,
          textStyle: {
-             fontSize: 6,
+             fontSize: 10,
              color: '#29B0ff'
          },
          formatter: function (name) {
-             return (name.length > 8 ? (name.slice(0,8)+"...") : name );
+             return  name;
          },
 
     },
@@ -53,23 +53,24 @@ var option = {
             name:'访问来源',
             type:'pie',
             center:['50%','38%'],
-            radius: ['50%', '60%'],
+            radius: ['40%', '50%'],
             avoidLabelOverlap: false,
             data:[
-                {value:28, name:'XX 28%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true},
-                {value:22, name:'XXX 22%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true},
-                {value:14, name:'XXX 14%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true},
-                {value:13, name:'XXXX 13%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true},
-                {value:10, name:'XXX 10%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true},
-                {value:8, name:'XXXX 8%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true},
-                {value:5, name:'XXX 5%',labelLine:{length:10,length2:10},hoverAnimation:false,clockwise:true}
+                {value:28, name:'XXX 28%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true},
+                {value:22, name:'XXXXXX 22%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true},
+                {value:14, name:'XXX 14%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true},
+                {value:13, name:'XXX 13%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true},
+                {value:10, name:'X 10%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true},
+                {value:8, name:'XXX 8%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true},
+                {value:5, name:'XX 5%',labelLine:{length:5,length2:5},hoverAnimation:false,clockwise:true}
             ],
             label:{            //饼图图形上的文本标签
                 normal:{
                     show:true,
                     // position:'inner', //标签的位置
+                    formatter:'{c}%',
                     textStyle : {
-                        fontSize : 5   //文字的字体大小
+                        fontSize : 10   //文字的字体大小
                     }
                 }
             },
