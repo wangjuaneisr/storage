@@ -31,23 +31,25 @@ echarts.util.each(jsonData.data, function(item, index) {
 });
 
 var option = {
+    grid:{
+        left:0
+    },
     legend: {
         top: 'center',
-        right:0,
+        right:10,
         // x: 'center',
         icon: 'circle',
         width:'20%',
         itemGap:20,
         textStyle:{
-            color:'#fff',
-            fontSize:8
+            color:'#fff'
         },
 
     },
     series: [{
         type: 'pie',
         name: 'pie',
-        radius: ['70%', '90%'],
+        radius: ['55%', '75%'],
         center:['30%','52%'],
         hoverAnimation: false, //设置饼图默认的展开样式
         hoverOffset:0,

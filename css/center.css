@@ -283,6 +283,10 @@ body,html{
 .mMid-box li{
     width: 50%;
 }
+.mMid-box li:last-child dl{
+    padding-left: 50px;
+    box-sizing: border-box;
+}
 .mMid-box li .tit{
     padding-bottom: 6px;
     padding-left: 4px;
