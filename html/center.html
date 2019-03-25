@@ -314,40 +314,40 @@
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">查看详情</div></td>
+                                    <td><div class="mini detail" data-url="005if6">查看详情</div></td>
                                 </tr>
                                 <tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">查看详情</div></td>
+                                    <td><div class="mini detail" data-url="005if7">查看详情</div></td>
                                 </tr>
                                 <tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">12131</div></td>
+                                    <td><div class="mini detail" data-url="005if7">查看详情</div></td>
                                 </tr><tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">查看详情</div></td>
+                                    <td><div class="mini detail" data-url="005if7">查看详情</div></td>
                                 </tr><tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">查看详情</div></td>
+                                    <td><div class="mini detail" data-url="005if7">查看详情</div></td>
                                 </tr><tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">查看详情</div></td>
+                                    <td><div class="mini detail" data-url="005if7">查看详情</div></td>
                                 </tr>
                                 <tr>
                                     <td><div class="mini">2019:03:1916:00:00</div></td>
                                     <td><div class="mini">粤T 123456</div></td>
                                     <td><div class="mini">张安</div></td>
-                                    <td><div class="mini detail">12131</div></td>
+                                    <td><div class="mini detail" data-url="005if7">查看详情</div></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -361,7 +361,6 @@
     <div class="mask">
         <div class="pop">
             <div class="closeBtn"></div>
-            <iframe src="https://demo.otms.cn/mp/?tab=ALL#/order-preview/8CA2A88DFD4F959419BE652442B8BC99/ee0c0960d160afa20bfb71b086a84dec?_k=005if6" width="796" height="698" frameborder="0" style="position: fixed;z-index: 10;background-color: #fff"></iframe>
         </div>
     </div>
 </div>
@@ -386,10 +385,19 @@
     });
     
     $('.detail').click(function () {
+
+        var url = $(this).attr('data-url');
+
+        $('.pop').html('<iframe src="https://demo.otms.cn/mp/?tab=ALL#/order-preview/8CA2A88DFD4F959419BE652442B8BC99/ee0c0960d160afa20bfb71b086a84dec?_k=' + url +'" width="796" height="698" frameborder="0" style="position: fixed;z-index: 10;background-color: #fff"></iframe>');
+
+
         $('.mask').fadeIn();
+
     })
     $('.closeBtn').click(function () {
+
         $('.mask').fadeOut();
+
     })
 </script>
 <script src="../lib/echarts.min.js"></script>
