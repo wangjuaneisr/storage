@@ -47,7 +47,7 @@ var option = {
 
     },
 
-    color:['#9200DD','#E57B00','#304FFF','#F84D4D','#30FF8C','#FF3075','#009FF0'],
+    color:['#9200DD','#E57B00','#F84D4D','#30FF8C','#FF3075','#009FF0','#304FFF'],
     series: [
         {
             name:'访问来源',

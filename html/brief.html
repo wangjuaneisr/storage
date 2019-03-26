@@ -161,18 +161,53 @@
         $('.slideBg').find('.container').eq(index).fadeIn().siblings().hide();
     })
 
-    //list-control
-    $('.list-control li').click(function () {
+    var index = 0,timer;
 
-        var index = $(this).index();
+    timer = setInterval(function () {
 
-        $(this).addClass('cur').siblings().removeClass('cur');
+        fadeInAndOut();
 
-        $(this).parent('.list-control').prev('.list').find('li').eq(index)
+    },5000);
+
+
+    function fadeInAndOut(){
+        if(index > 6)index = 0;
+
+        $('.list-control li').eq(index).addClass('cur').siblings().removeClass('cur');
+
+        $('.list-control li').eq(index).parent('.list-control').prev('.list').find('li').eq(index)
             .fadeIn().
         siblings().hide();
 
-    })
+        index ++;
+
+    }
+
+    //list-control
+    $('.list-control li').click(function () {
+
+        clearInterval(timer);
+
+        index = $(this).index();
+
+        fadeInAndOut();
+
+    });
+
+
+
+    $('.list-control li').hover(function () {
+
+        clearInterval(timer);
+
+    },function () {
+
+        timer = setInterval(function () {
+
+            fadeInAndOut();
+
+        },10000);
+    });
 
 </script>
 <!--<script src="../lib/echarts.min.js"></script>-->
