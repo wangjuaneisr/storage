@@ -278,6 +278,9 @@ body{
     color:#fff;
     line-height: 30px;
 }
+.index i{
+    margin-right: 2px;
+}
 .index .green{
     color: #24FFB6;
 }
@@ -287,12 +290,15 @@ body{
 .index .number{
     height: 24px;
     padding: 0 10px;
-    margin-top: 5px;
     border-radius: 20px;
     line-height: 24px;
 }
 .index .num{
     font-size: 24px;
+}
+.index .txt{
+    margin-left: 20px;
+    color: #00B6FF;
 }
 .index .green{
     margin-left: 10px;
@@ -497,6 +503,9 @@ body{
     text-align: center;
    align-items: center;
     justify-content: center;
+}
+.indexBox li .index{
+    margin-top: 5px;
 }
 .indexBox li .name{
     font-size: 12px;
