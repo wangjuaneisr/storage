@@ -36,7 +36,7 @@
                         <div class="side">
                             <div class="tab cur">视频简介</div>
                             <div class="tab">专业化服务</div>
-                            <div class="tab">安徽理货中心</div>
+                            <div class="tab">华源医药理货中心</div>
                         </div>
                     </div>
 
@@ -49,14 +49,19 @@
                     <div class="before"></div>
                     <div class="after"></div>
                     <div class="slideBg">
-
                         <div class="container">
                             <video width="1028" height="600" controls="controls" autoplay="autoplay" class="big">
                                 <source src="http://183.63.131.51:6713/mag/hls/0b93a7b45f34402984bea8da7f66bbcc/1/live.m3u8" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <div class="container hide">
+                    </div>
+                </div>
+                <div class="brief hide">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                    <div class="slideBg">
+                        <div class="container">
                             <ul class="list">
                                 <li class="cur">
                                     <div class="titImg">物流规划</div>
@@ -103,9 +108,9 @@
                                     <div class="titImg">电商平台</div>
                                     <img src="../image/06.png" alt="" width="968" height="384">
                                     <p>广交物流实现B2b，B2C多平台对接，整合客户企业各医药电商服务平台的线上线下资源，协助客户企业提供信息查询、技术创新、管理咨询、市场开拓、资源共享等服务，帮助客户企业实现降本增效。
-                                    <br>低成本：帮助客户企业降低成本投入，专注市场营销投入。
-                                    <br>高效率：多仓联动、路径优化，提升订单转化效率
-                                    <br>多渠道：通过数据分析、查询和连通，促进客户资源在区域市场范围内的高效配置和共享利用，大数据布局“无人药房”，增加线上线下药品营销拓客渠道。</p>
+                                        <br>低成本：帮助客户企业降低成本投入，专注市场营销投入。
+                                        <br>高效率：多仓联动、路径优化，提升订单转化效率
+                                        <br>多渠道：通过数据分析、查询和连通，促进客户资源在区域市场范围内的高效配置和共享利用，大数据布局“无人药房”，增加线上线下药品营销拓客渠道。</p>
                                 </li>
                                 <li>
                                     <div class="titImg">健康产业园</div>
@@ -124,7 +129,27 @@
                                 <li>7</li>
                             </ul>
                         </div>
-                        <div class="container hide">还没想好放啥呢</div>
+                    </div>
+                </div>
+                <div class="brief hy-center hide">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                    <div class="slideBg">
+                        <div class="container">
+                            <div class="hy-left">
+                                <div class="item">
+                                    <div class="i-tit"><i class="car"></i>广交医药流通智慧物流服务</div>
+                                    <p>广交物流按照“分布式仓储， 集约化配送”原则，以“多仓多点”合规流通的医药物流网络化经营模式及高效、安全、经济的医药物流服务体系， 为医药客户提供全国多仓联动仓储配送服务。</p>
+                                    <p>依托“药链云WMS、TMS、OMS”能实现企业的业务流程数字化、线下业务线上化、库存集中化，提供业务全链条的数字化服务，打通客户前端电商销售平台、ERP系统、数据交互接口及后端物流等系统。</p>
+                                </div>
+                                <div class="item">
+                                    <div class="i-tit"><i class="file"></i>华源理货中心</div>
+                                    <p>广交物流按照“分布式仓储， 集约化配送”原则，以“多仓多点”合规流通的医药物流网络化经营模式及高效、安全、经济的医药物流服务体系， 为医药客户提供全国多仓联动仓储配送服务。</p>
+                                    <p>依托“药链云WMS、TMS、OMS”能实现企业的业务流程数字化、线下业务线上化、库存集中化，提供业务全链条的数字化服务，打通客户前端电商销售平台、ERP系统、数据交互接口及后端物流等系统。</p>
+                                </div>
+                            </div>
+                            <div class="hy-right"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,7 +183,7 @@
 
         var index = $(this).index();
 
-        $('.slideBg').find('.container').eq(index).fadeIn().siblings().hide();
+        $('.brief-box').find('.brief').eq(index).fadeIn().siblings().hide();
     })
 
     var index = 0,timer;

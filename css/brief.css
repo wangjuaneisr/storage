@@ -195,3 +195,61 @@
 .container .list-control li.cur{
     opacity: 1;
 }
+.hy-center{
+    width: 1234px;
+    height: 644px;
+    /*padding-top: 23px;*/
+}
+.hy-center .slideBg{
+    width: 1234px;
+    height: 660px;
+    background-size: 100% 100%;
+}
+.hy-center .hy-left{
+    float: left;
+    width: 372px;
+    padding-left: 95px;
+    padding-top: 40px;
+}
+.hy-center .hy-left .item{
+    position: relative;
+    padding-left: 52px;
+    padding-bottom: 36px;
+    letter-spacing: 1px;
+}
+.hy-center .hy-left .item .i-tit{
+    height: 40px;
+    font-size: 16px;
+    color: #1FBAFF;
+    line-height: 40px;
+}
+.hy-center .hy-left .item .i-tit i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+.hy-center .hy-left .item .i-tit .car{
+    background: url("../image/13.png") no-repeat;
+    background-size: 100% 100%;
+}
+.hy-center .hy-left .item .i-tit .file{
+    background: url("../image/14.png") no-repeat;
+    background-size: 100% 100%;
+}
+.hy-center .hy-left .item p{
+    margin-top: 10px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+}
+.hy-center .hy-right{
+    float: right;
+    width: 474px;
+    height: 501px;
+    margin-top: 80px;
+    margin-right: 144px;
+    background: url("../image/erd.png") center no-repeat;
+    background-size: 100% auto;
+}
