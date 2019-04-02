@@ -258,6 +258,12 @@
     height: 4px;
     background: #1FBAFF;
 }
+.hy-center .hy-left .item dd ul li:first-child{
+    padding-left: 0;
+}
+.hy-center .hy-left .item dd ul li:first-child:after{
+    display: none;
+}
 .hy-center .hy-right{
     float: right;
     width: 474px;
