@@ -238,11 +238,25 @@
     background: url("../image/14.png") no-repeat;
     background-size: 100% 100%;
 }
-.hy-center .hy-left .item p{
+.hy-center .hy-left .item dd{
     margin-top: 10px;
     color: #fff;
     line-height: 20px;
     font-size: 12px;
+}
+.hy-center .hy-left .item dd ul li{
+    position: relative;
+    padding-left: 10px;
+
+}
+.hy-center .hy-left .item dd ul li:after{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #1FBAFF;
 }
 .hy-center .hy-right{
     float: right;
