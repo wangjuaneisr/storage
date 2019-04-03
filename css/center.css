@@ -264,7 +264,7 @@ body,html{
     margin-top: 12px;
     display: flex;
     justify-content: center;
-    line-height: 28px;
+    line-height: 24px;
 }
 .compare-box li .index .txt{
     font-size: 12px;
