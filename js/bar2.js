@@ -3,7 +3,7 @@ var columnEchart = echarts.init(document.getElementById('barChart'));
 
 var grayBar = [1, 1, 1, 1, 1, 1,1,1,1,1];
 var zongjine = [2000, 3000, 4000, 5000, 6000, 7000,8000,9000,10000,20000];
-var xingm = ['仓库10', '仓库9', '仓库8', '仓库7', '仓库6', '仓库5','仓库4','仓库3','仓库2','仓库1'];
+var xingm = ['仓库10', '仓库9', '仓库8', '仓库7', '仓库6', '仓库5','仓库4','仓库3','仓库2','石家庄医药'];
 
 option = {
     color: ['#61A8FF'], //进度条颜色
@@ -26,7 +26,7 @@ option = {
         show: true,
         data: xingm,
         inverse: true,
-        offset:20,
+        offset:30,
         axisLine: {
             show: false
         },
@@ -40,7 +40,7 @@ option = {
             color: '#fff',
             align:'center',
             textStyle:{
-                fontSize:8,
+                fontSize:10,
             },
             position:[0,0],
             interval:0,
