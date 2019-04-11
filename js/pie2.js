@@ -1,6 +1,7 @@
 
 var color = ['#0CFFB8','#FF8526','#DC26FF','#16A6FF','#16A6FF','#16A6FF','#16A6FF','#16A6FF','#16A6FF','#16A6FF'];
-var data = ['0.75','0.68','0.5','0.75','0.75','0.75','0.75','0.75','0.75','0.75'];
+var data = ['0.2605','0.0009','0.0014','0.0009','0.0087','0.0209','0.5821','0.1263'];
+var data2 = ['26.05','0.09','0.14','0.09','0.87','2.09','58.21','12.63'];
 
 
 
@@ -23,7 +24,7 @@ var option;
 function setOptionFun(index){
     return option = {
         title: {
-            text:data[index]*100+'%',
+            text:data2[index]+'%',
             x: 'center',
             y: 'center',
             textStyle: {
@@ -41,7 +42,7 @@ function setOptionFun(index){
         series: [{
             name: 'loading',
             type: 'pie',
-            radius: ['52%', '60%'],
+            radius: ['67%', '75%'],
             hoverAnimation: false,
             label: {
                 normal: {
@@ -62,7 +63,7 @@ function setOptionFun(index){
         },{
             name: 'loading',
             type: 'pie',
-            radius: ['48%', '64%'],
+            radius: ['63%', '79%'],
             hoverAnimation: false,
             label: {
                 normal: {
@@ -87,7 +88,7 @@ function setOptionFun(index){
                     }
                 }
             }, {
-                value: (1-data[index]),
+                value: 1-data[index],
                 name: '',
                 itemStyle: placeHolderStyle
             }
